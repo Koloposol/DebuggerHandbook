@@ -16,5 +16,18 @@ namespace DebuggerHandbook
         {
             InitializeComponent();
         }
+
+        private void чтоТакоеОтладкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewForm viewForm = new viewForm();
+            viewForm.Show();
+
+            this.Hide();
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

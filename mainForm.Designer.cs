@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.вфывToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.чтоТакоеОтладкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.мToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.методРучногоТестированияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.методИндукцииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,13 +46,9 @@
             this.стачическиеАнализаторыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
             this.тестПоОтладкеПрограммToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.тестПоМетодамОтладкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.тестПоИнструментамОтладкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.книгиПоОтладкеПОToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.искусствоДизассемблированияКасперскиКРоккоЕToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.техникаОтладкиПрограммБезИсходныхТекстовКасперскиКToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,12 +57,16 @@
             this.видеоурокиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отладкаКакПользоватьсяОтладчикомToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отладкаПрограммToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.тестПоМетодамОтладкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.тестПоИнструментамОтладкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -77,7 +77,7 @@
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTextBox1,
-            this.вфывToolStripMenuItem,
+            this.чтоТакоеОтладкаToolStripMenuItem,
             this.мToolStripMenuItem,
             this.инструментыОтладкиToolStripMenuItem,
             this.toolStripTextBox2,
@@ -105,11 +105,12 @@
             this.toolStripTextBox1.Size = new System.Drawing.Size(250, 29);
             this.toolStripTextBox1.Text = "Теоретическая часть:";
             // 
-            // вфывToolStripMenuItem
+            // чтоТакоеОтладкаToolStripMenuItem
             // 
-            this.вфывToolStripMenuItem.Name = "вфывToolStripMenuItem";
-            this.вфывToolStripMenuItem.Size = new System.Drawing.Size(252, 25);
-            this.вфывToolStripMenuItem.Text = "Что такое отладка программы?";
+            this.чтоТакоеОтладкаToolStripMenuItem.Name = "чтоТакоеОтладкаToolStripMenuItem";
+            this.чтоТакоеОтладкаToolStripMenuItem.Size = new System.Drawing.Size(252, 25);
+            this.чтоТакоеОтладкаToolStripMenuItem.Text = "Что такое отладка программы?";
+            this.чтоТакоеОтладкаToolStripMenuItem.Click += new System.EventHandler(this.чтоТакоеОтладкаToolStripMenuItem_Click);
             // 
             // мToolStripMenuItem
             // 
@@ -213,6 +214,19 @@
             this.тестПоОтладкеПрограммToolStripMenuItem.Size = new System.Drawing.Size(252, 25);
             this.тестПоОтладкеПрограммToolStripMenuItem.Text = "Тест по отладке программ";
             // 
+            // тестПоМетодамОтладкиToolStripMenuItem
+            // 
+            this.тестПоМетодамОтладкиToolStripMenuItem.Name = "тестПоМетодамОтладкиToolStripMenuItem";
+            this.тестПоМетодамОтладкиToolStripMenuItem.Size = new System.Drawing.Size(252, 25);
+            this.тестПоМетодамОтладкиToolStripMenuItem.Text = "Тест по методам отладки";
+            // 
+            // тестПоИнструментамОтладкиToolStripMenuItem
+            // 
+            this.тестПоИнструментамОтладкиToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.тестПоИнструментамОтладкиToolStripMenuItem.Name = "тестПоИнструментамОтладкиToolStripMenuItem";
+            this.тестПоИнструментамОтладкиToolStripMenuItem.Size = new System.Drawing.Size(252, 25);
+            this.тестПоИнструментамОтладкиToolStripMenuItem.Text = "Тест по инструментам отладки";
+            // 
             // toolStripTextBox3
             // 
             this.toolStripTextBox3.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -222,71 +236,6 @@
             this.toolStripTextBox3.ReadOnly = true;
             this.toolStripTextBox3.Size = new System.Drawing.Size(250, 29);
             this.toolStripTextBox3.Text = "Литература и ссылки:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(119, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(250, 30);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "База знаний «Отладчик»";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.menuStrip2);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(265, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(484, 450);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(6, 158);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(475, 252);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
-            // 
-            // menuStrip2
-            // 
-            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.оПрограммеToolStripMenuItem});
-            this.menuStrip2.Location = new System.Drawing.Point(3, 413);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip2.Size = new System.Drawing.Size(478, 34);
-            this.menuStrip2.TabIndex = 3;
-            this.menuStrip2.Text = "menuStrip2";
-            // 
-            // оПрограммеToolStripMenuItem
-            // 
-            this.оПрограммеToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.оПрограммеToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(118, 25);
-            this.оПрограммеToolStripMenuItem.Text = "О программе";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(124, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(245, 110);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // книгиПоОтладкеПОToolStripMenuItem
             // 
@@ -344,18 +293,70 @@
             this.отладкаПрограммToolStripMenuItem.Size = new System.Drawing.Size(377, 26);
             this.отладкаПрограммToolStripMenuItem.Text = "Отладка программ";
             // 
-            // тестПоМетодамОтладкиToolStripMenuItem
+            // label1
             // 
-            this.тестПоМетодамОтладкиToolStripMenuItem.Name = "тестПоМетодамОтладкиToolStripMenuItem";
-            this.тестПоМетодамОтладкиToolStripMenuItem.Size = new System.Drawing.Size(252, 25);
-            this.тестПоМетодамОтладкиToolStripMenuItem.Text = "Тест по методам отладки";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(119, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(250, 30);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "База знаний «Отладчик»";
             // 
-            // тестПоИнструментамОтладкиToolStripMenuItem
+            // groupBox1
             // 
-            this.тестПоИнструментамОтладкиToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.тестПоИнструментамОтладкиToolStripMenuItem.Name = "тестПоИнструментамОтладкиToolStripMenuItem";
-            this.тестПоИнструментамОтладкиToolStripMenuItem.Size = new System.Drawing.Size(252, 25);
-            this.тестПоИнструментамОтладкиToolStripMenuItem.Text = "Тест по инструментам отладки";
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.menuStrip2);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(265, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(484, 450);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(124, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(245, 110);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.Location = new System.Drawing.Point(6, 158);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(475, 252);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            // 
+            // menuStrip2
+            // 
+            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.оПрограммеToolStripMenuItem});
+            this.menuStrip2.Location = new System.Drawing.Point(3, 413);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.menuStrip2.Size = new System.Drawing.Size(478, 34);
+            this.menuStrip2.TabIndex = 3;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
+            // оПрограммеToolStripMenuItem
+            // 
+            this.оПрограммеToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.оПрограммеToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(118, 25);
+            this.оПрограммеToolStripMenuItem.Text = "О программе";
             // 
             // MainForm
             // 
@@ -372,13 +373,14 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "База знаний «Отладчик»";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,7 +389,7 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem вфывToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem чтоТакоеОтладкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem мToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem методРучногоТестированияToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem методИндукцииToolStripMenuItem;
