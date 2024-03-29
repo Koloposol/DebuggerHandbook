@@ -73,10 +73,53 @@ namespace DebuggerHandbook
             this.Hide();
         }
 
+        private void отладчикиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewForm viewForm = new viewForm();
+            viewForm.Show();
+
+            string lectureLink = $@"{applicationDirectory}\LecturesBase\debuggers.html";
+            viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+            this.Hide();
+        }
+
+        private void профилировщикиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewForm viewForm = new viewForm();
+            viewForm.Show();
+
+            string lectureLink = $@"{applicationDirectory}\LecturesBase\profiler.html";
+            viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+            this.Hide();
+        }
+
+        private void дизассемблерыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewForm viewForm = new viewForm();
+            viewForm.Show();
+
+            string lectureLink = $@"{applicationDirectory}\LecturesBase\disassemblers.html";
+            viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+            this.Hide();
+        }
+
+        private void анализаторыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewForm viewForm = new viewForm();
+            viewForm.Show();
+
+            string lectureLink = $@"{applicationDirectory}\LecturesBase\analyzers.html";
+            viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+            this.Hide();
+        }
+
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
-
     }
 }

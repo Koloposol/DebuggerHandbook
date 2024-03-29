@@ -42,8 +42,6 @@
             this.профилировщикиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.дизассемблерыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.анализаторыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.динамическиеАнализаторыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.стачическиеАнализаторыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
             this.тестПоОтладкеПрограммToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.тестПоМетодамОтладкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -168,39 +166,28 @@
             this.отладчикиToolStripMenuItem.Name = "отладчикиToolStripMenuItem";
             this.отладчикиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.отладчикиToolStripMenuItem.Text = "Отладчики";
+            this.отладчикиToolStripMenuItem.Click += new System.EventHandler(this.отладчикиToolStripMenuItem_Click);
             // 
             // профилировщикиToolStripMenuItem
             // 
             this.профилировщикиToolStripMenuItem.Name = "профилировщикиToolStripMenuItem";
             this.профилировщикиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.профилировщикиToolStripMenuItem.Text = "Профилировщики";
+            this.профилировщикиToolStripMenuItem.Click += new System.EventHandler(this.профилировщикиToolStripMenuItem_Click);
             // 
             // дизассемблерыToolStripMenuItem
             // 
             this.дизассемблерыToolStripMenuItem.Name = "дизассемблерыToolStripMenuItem";
             this.дизассемблерыToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.дизассемблерыToolStripMenuItem.Text = "Дизассемблеры";
+            this.дизассемблерыToolStripMenuItem.Click += new System.EventHandler(this.дизассемблерыToolStripMenuItem_Click);
             // 
             // анализаторыToolStripMenuItem
             // 
-            this.анализаторыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.динамическиеАнализаторыToolStripMenuItem,
-            this.стачическиеАнализаторыToolStripMenuItem});
             this.анализаторыToolStripMenuItem.Name = "анализаторыToolStripMenuItem";
             this.анализаторыToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.анализаторыToolStripMenuItem.Text = "Анализаторы";
-            // 
-            // динамическиеАнализаторыToolStripMenuItem
-            // 
-            this.динамическиеАнализаторыToolStripMenuItem.Name = "динамическиеАнализаторыToolStripMenuItem";
-            this.динамическиеАнализаторыToolStripMenuItem.Size = new System.Drawing.Size(296, 26);
-            this.динамическиеАнализаторыToolStripMenuItem.Text = "Динамические анализаторы";
-            // 
-            // стачическиеАнализаторыToolStripMenuItem
-            // 
-            this.стачическиеАнализаторыToolStripMenuItem.Name = "стачическиеАнализаторыToolStripMenuItem";
-            this.стачическиеАнализаторыToolStripMenuItem.Size = new System.Drawing.Size(296, 26);
-            this.стачическиеАнализаторыToolStripMenuItem.Text = "Стачические анализаторы";
+            this.анализаторыToolStripMenuItem.Click += new System.EventHandler(this.анализаторыToolStripMenuItem_Click);
             // 
             // toolStripTextBox2
             // 
@@ -404,8 +391,6 @@
         private System.Windows.Forms.ToolStripMenuItem профилировщикиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem дизассемблерыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem анализаторыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem динамическиеАнализаторыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem стачическиеАнализаторыToolStripMenuItem;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
         private System.Windows.Forms.ToolStripMenuItem тестПоОтладкеПрограммToolStripMenuItem;
