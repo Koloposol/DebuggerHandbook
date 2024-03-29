@@ -277,12 +277,14 @@
             this.отладкаКакПользоватьсяОтладчикомToolStripMenuItem.Name = "отладкаКакПользоватьсяОтладчикомToolStripMenuItem";
             this.отладкаКакПользоватьсяОтладчикомToolStripMenuItem.Size = new System.Drawing.Size(377, 26);
             this.отладкаКакПользоватьсяОтладчикомToolStripMenuItem.Text = "Отладка. Как пользоваться отладчиком";
+            this.отладкаКакПользоватьсяОтладчикомToolStripMenuItem.Click += new System.EventHandler(this.отладкаКакПользоватьсяОтладчикомToolStripMenuItem_Click);
             // 
             // отладкаПрограммToolStripMenuItem
             // 
             this.отладкаПрограммToolStripMenuItem.Name = "отладкаПрограммToolStripMenuItem";
             this.отладкаПрограммToolStripMenuItem.Size = new System.Drawing.Size(377, 26);
             this.отладкаПрограммToolStripMenuItem.Text = "Отладка программ";
+            this.отладкаПрограммToolStripMenuItem.Click += new System.EventHandler(this.отладкаПрограммToolStripMenuItem_Click);
             // 
             // label1
             // 

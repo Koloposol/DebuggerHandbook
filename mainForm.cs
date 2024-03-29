@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 
 namespace DebuggerHandbook
 {
@@ -117,9 +118,20 @@ namespace DebuggerHandbook
             this.Hide();
         }
 
+        private void отладкаКакПользоватьсяОтладчикомToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.youtube.com/watch?v=_ZairtpcXTs&t=14s");
+        }
+
+        private void отладкаПрограммToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.youtube.com/watch?v=qut3cTKcFhg&t=851s");
+        }
+
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
+
     }
 }
