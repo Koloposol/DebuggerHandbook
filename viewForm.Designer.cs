@@ -77,6 +77,6 @@
         #endregion
 
         private System.Windows.Forms.Button backButton;
-        private System.Windows.Forms.WebBrowser webBrowser1;
+        public System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

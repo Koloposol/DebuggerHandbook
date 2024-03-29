@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace DebuggerHandbook
 {
@@ -17,10 +18,15 @@ namespace DebuggerHandbook
             InitializeComponent();
         }
 
+        string applicationDirectory = Path.GetDirectoryName(Application.ExecutablePath);
+
         private void чтоТакоеОтладкаToolStripMenuItem_Click(object sender, EventArgs e)
         {
             viewForm viewForm = new viewForm();
             viewForm.Show();
+
+            string lectureLink = $@"{applicationDirectory}\LecturesBase\what_is_debugging.html";
+            viewForm.webBrowser1.Url = new Uri(lectureLink);
 
             this.Hide();
         }
