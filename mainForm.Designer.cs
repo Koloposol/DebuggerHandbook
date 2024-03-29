@@ -128,24 +128,28 @@
             this.методРучногоТестированияToolStripMenuItem.Name = "методРучногоТестированияToolStripMenuItem";
             this.методРучногоТестированияToolStripMenuItem.Size = new System.Drawing.Size(340, 26);
             this.методРучногоТестированияToolStripMenuItem.Text = "Метод ручного тестирования";
+            this.методРучногоТестированияToolStripMenuItem.Click += new System.EventHandler(this.методРучногоТестированияToolStripMenuItem_Click);
             // 
             // методИндукцииToolStripMenuItem
             // 
             this.методИндукцииToolStripMenuItem.Name = "методИндукцииToolStripMenuItem";
             this.методИндукцииToolStripMenuItem.Size = new System.Drawing.Size(340, 26);
             this.методИндукцииToolStripMenuItem.Text = "Метод индукции";
+            this.методИндукцииToolStripMenuItem.Click += new System.EventHandler(this.методИндукцииToolStripMenuItem_Click);
             // 
             // методДедукцииToolStripMenuItem
             // 
             this.методДедукцииToolStripMenuItem.Name = "методДедукцииToolStripMenuItem";
             this.методДедукцииToolStripMenuItem.Size = new System.Drawing.Size(340, 26);
             this.методДедукцииToolStripMenuItem.Text = "Метод дедукции";
+            this.методДедукцииToolStripMenuItem.Click += new System.EventHandler(this.методДедукцииToolStripMenuItem_Click);
             // 
             // методОбратногоПрослеживанияToolStripMenuItem
             // 
             this.методОбратногоПрослеживанияToolStripMenuItem.Name = "методОбратногоПрослеживанияToolStripMenuItem";
             this.методОбратногоПрослеживанияToolStripMenuItem.Size = new System.Drawing.Size(340, 26);
             this.методОбратногоПрослеживанияToolStripMenuItem.Text = "Метод обратного прослеживания";
+            this.методОбратногоПрослеживанияToolStripMenuItem.Click += new System.EventHandler(this.методОбратногоПрослеживанияToolStripMenuItem_Click);
             // 
             // инструментыОтладкиToolStripMenuItem
             // 

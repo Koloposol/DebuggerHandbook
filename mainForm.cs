@@ -30,10 +30,53 @@ namespace DebuggerHandbook
 
             this.Hide();
         }
+        private void методРучногоТестированияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewForm viewForm = new viewForm();
+            viewForm.Show();
+
+            string lectureLink = $@"{applicationDirectory}\LecturesBase\handle_testing.html";
+            viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+            this.Hide();
+        }
+        private void методИндукцииToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewForm viewForm = new viewForm();
+            viewForm.Show();
+
+            string lectureLink = $@"{applicationDirectory}\LecturesBase\induction_testing.html";
+            viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+            this.Hide();
+        }
+
+        private void методДедукцииToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewForm viewForm = new viewForm();
+            viewForm.Show();
+
+            string lectureLink = $@"{applicationDirectory}\LecturesBase\deduction_testing.html";
+            viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+            this.Hide();
+        }
+
+        private void методОбратногоПрослеживанияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewForm viewForm = new viewForm();
+            viewForm.Show();
+
+            string lectureLink = $@"{applicationDirectory}\LecturesBase\backtracking_testing.html";
+            viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+            this.Hide();
+        }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
+
     }
 }
