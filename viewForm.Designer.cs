@@ -35,13 +35,12 @@
             // 
             // backButton
             // 
-            this.backButton.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.backButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.backButton.ForeColor = System.Drawing.Color.White;
             this.backButton.Location = new System.Drawing.Point(12, 412);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(108, 35);
+            this.backButton.Size = new System.Drawing.Size(96, 35);
             this.backButton.TabIndex = 0;
             this.backButton.Text = "Назад";
             this.backButton.UseVisualStyleBackColor = false;
