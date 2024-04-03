@@ -39,6 +39,7 @@ namespace DebuggerHandbook
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //TODO заменить about.html формой aboutForm
             viewForm viewForm = new viewForm();
             viewForm.Show();
 
