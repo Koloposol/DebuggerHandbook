@@ -24,5 +24,15 @@ namespace DebuggerHandbook
 
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //AddResultToDB();
+
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+
+            this.Close();
+        }
     }
 }
