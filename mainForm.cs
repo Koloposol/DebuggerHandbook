@@ -48,9 +48,18 @@ namespace DebuggerHandbook
             this.Hide();
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            practiceForm_1 prcticeForm = new practiceForm_1();
+            prcticeForm.Show();
+
+            this.Hide();
+        }
+
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
+
     }
 }
