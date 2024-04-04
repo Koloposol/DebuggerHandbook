@@ -76,7 +76,9 @@
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.webBrowser1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "viewReadedForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Просмотр документов";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
