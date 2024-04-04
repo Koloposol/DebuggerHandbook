@@ -9,7 +9,7 @@ namespace DebuggerHandbook
 {
     internal class DataBase
     {
-        static string connectionString = @"Data Source=DESKTOP-UGDHEEM;Initial Catalog=users_db;Integrated Security=True";
+        static string connectionString = @"Data Source=DESKTOP-UGDHEEM;Initial Catalog=kursovaya;Integrated Security=True;TrustServerCertificate=True";
         SqlConnection sqlConnection = new SqlConnection(connectionString);
 
         public void openConnection()

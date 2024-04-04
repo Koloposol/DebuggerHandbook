@@ -8,16 +8,20 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace DebuggerHandbook
 {
     public partial class LogInForm : Form
     {
+        DataBase db = new DataBase();
+
         public LogInForm()
         {
             InitializeComponent();
         }
 
+        //Отобразить пароль
         private void button1_Click(object sender, EventArgs e)
         {
             textBox2.UseSystemPasswordChar = false;
@@ -25,6 +29,7 @@ namespace DebuggerHandbook
             button2.Visible = true;
         }
 
+        //Скрыть пароль
         private void button2_Click(object sender, EventArgs e)
         {
             textBox2.UseSystemPasswordChar = true;
@@ -44,16 +49,43 @@ namespace DebuggerHandbook
         {
             if (textBox1.Text == "" || textBox2.Text == "")
                 MessageBox.Show("Необходимо заполнить все поля!", "Ошибка авторизации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-            if (!Regex.IsMatch(textBox1.Text, pattern, RegexOptions.IgnoreCase))
-                MessageBox.Show("Email указан в неверном формате!", "Ошибка авторизации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else
+            {
+                string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+                if (!Regex.IsMatch(textBox1.Text, pattern, RegexOptions.IgnoreCase))
+                    MessageBox.Show("Email указан в неверном формате!", "Ошибка авторизации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         //Нажатие кнопки "Войти"
         private void button4_Click(object sender, EventArgs e)
         {
             CheckingValidityOfFields();
+
+            string email = textBox1.Text;
+            string password = textBox2.Text;    
+
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
+            DataTable dataTable = new DataTable();
+
+            string query = $"SELECT user_surname, user_name, user_midlename, user_theory_count, user_practice_count " +
+                $"FROM users_db " +
+                $"WHERE user_email = '{email}' and user_password = '{password}'";
+
+            SqlCommand sqlCommand = new SqlCommand(query, db.GetConnection());
+
+            sqlDataAdapter.SelectCommand = sqlCommand;
+            sqlDataAdapter.Fill(dataTable);
+
+            if (dataTable.Rows.Count > 0)
+            {
+                MainForm mainForm = new MainForm();
+                mainForm.Show();
+
+                this.Hide();
+            }
+            else
+                MessageBox.Show("Неудалось подключиться к базе данных!", "Ошибка авторизации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
 
