@@ -82,7 +82,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(320, 35);
             this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "выа";
             // 
             // label4
             // 
@@ -103,7 +102,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(277, 35);
             this.textBox2.TabIndex = 6;
-            this.textBox2.Text = "выа";
             this.textBox2.UseSystemPasswordChar = true;
             // 
             // linkLabel1
@@ -119,6 +117,7 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Регистрация";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // button4
             // 
@@ -192,6 +191,7 @@
             this.Name = "LogInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "База знаний «Отладчик»";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LogInForm_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

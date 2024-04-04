@@ -30,5 +30,18 @@ namespace DebuggerHandbook
             button2.Visible = false;
             button1.Visible = true;
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SignUpForm signUpForm = new SignUpForm();   
+            signUpForm.Show();
+
+            this.Hide();
+        }
+
+        private void LogInForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
