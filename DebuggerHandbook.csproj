@@ -67,6 +67,12 @@
     <Compile Include="viewForm.Designer.cs">
       <DependentUpon>viewForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewReadedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewReadedForm.Designer.cs">
+      <DependentUpon>viewReadedForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +90,9 @@
     </Compile>
     <EmbeddedResource Include="viewForm.resx">
       <DependentUpon>viewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewReadedForm.resx">
+      <DependentUpon>viewReadedForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
