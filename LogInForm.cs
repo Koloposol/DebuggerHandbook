@@ -16,5 +16,19 @@ namespace DebuggerHandbook
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox2.UseSystemPasswordChar = false;
+            button1.Visible = false;
+            button2.Visible = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox2.UseSystemPasswordChar = true;
+            button2.Visible = false;
+            button1.Visible = true;
+        }
     }
 }
