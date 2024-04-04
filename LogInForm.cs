@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -39,9 +40,27 @@ namespace DebuggerHandbook
             this.Hide();
         }
 
+        private void CheckingValidityOfFields()
+        {
+            if (textBox1.Text == "" || textBox2.Text == "")
+                MessageBox.Show("Необходимо заполнить все поля!", "Ошибка авторизации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            if (!Regex.IsMatch(textBox1.Text, pattern, RegexOptions.IgnoreCase))
+                MessageBox.Show("Email указан в неверном формате!", "Ошибка авторизации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        //Нажатие кнопки "Войти"
+        private void button4_Click(object sender, EventArgs e)
+        {
+            CheckingValidityOfFields();
+        }
+
+
         private void LogInForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
+
     }
 }
