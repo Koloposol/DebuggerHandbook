@@ -68,9 +68,9 @@ namespace DebuggerHandbook
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
             DataTable dataTable = new DataTable();
 
-            string query = $"SELECT user_surname, user_name, user_midlename, user_theory_count, user_practice_count " +
+            string query = $"SELECT surname, name, midlename, theory_count, practice_count " +
                 $"FROM users_db " +
-                $"WHERE user_email = '{email}' and user_password = '{password}'";
+                $"WHERE email = '{email}' and password = '{password}'";
 
             SqlCommand sqlCommand = new SqlCommand(query, db.GetConnection());
 
