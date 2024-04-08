@@ -14,7 +14,7 @@ namespace DebuggerHandbook
 {
     public partial class LogInForm : Form
     {
-        DataBase db = new DataBase();
+
 
         public LogInForm()
         {
@@ -63,8 +63,9 @@ namespace DebuggerHandbook
             CheckingValidityOfFields();
 
             string email = textBox1.Text;
-            string password = textBox2.Text;    
+            string password = textBox2.Text;
 
+            DataBase db = new DataBase();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
             DataTable dataTable = new DataTable();
 

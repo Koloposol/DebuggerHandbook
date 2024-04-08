@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -58,10 +59,53 @@ namespace DebuggerHandbook
             }
         }
 
+        //private bool checkUser()
+        //{
+
+        //}
+
         //Нажатие кнопки "Зарегистрироваться"
         private void button4_Click(object sender, EventArgs e)
         {
-            CheckingValidityOfFields();
+            try
+            {
+                CheckingValidityOfFields();
+
+                string surname = textBox3.Text;
+                string name = textBox4.Text;
+                string email = textBox1.Text;
+                string password = textBox2.Text;
+
+                DataBase db = new DataBase();
+
+                string query = $"INSERT INTO users_db(surname, name, email, password) " +
+                    $"VALUES ('{surname}', '{name}', '{email}', '{password}')";
+
+                SqlCommand sqlCommand = new SqlCommand(query, db.GetConnection());
+
+                db.openConnection();
+
+                if (sqlCommand.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Учетная запись успешно создана!", "Регистрация завершена!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    LogInForm logInForm = new LogInForm();
+                    logInForm.Show();
+
+                    this.Close();
+                }
+                else
+                    MessageBox.Show("Неудалось создать учетную запись!\nВозможно указанные email или пароль уже зарегистрированы.", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                db.closeConnection();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Неудалось создать учетную запись!\nВозможно указанные email или пароль уже зарегистрированы.", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox1.Text = "";
+                textBox2.Text = "";
+                return;
+            }
         }
     }
 }
