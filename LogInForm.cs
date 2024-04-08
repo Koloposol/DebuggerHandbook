@@ -68,7 +68,7 @@ namespace DebuggerHandbook
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
             DataTable dataTable = new DataTable();
 
-            string query = $"SELECT surname, name, midlename, theory_count, practice_count " +
+            string query = $"SELECT surname, name, theory_count, practice_count " +
                 $"FROM users_db " +
                 $"WHERE email = '{email}' and password = '{password}'";
 
@@ -85,7 +85,7 @@ namespace DebuggerHandbook
                 this.Hide();
             }
             else
-                MessageBox.Show("Неудалось подключиться к базе данных!", "Ошибка авторизации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Неудалось подключиться к базе данных!\nПроверьте email и пароль.", "Ошибка авторизации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
 

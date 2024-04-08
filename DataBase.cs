@@ -12,7 +12,7 @@ namespace DebuggerHandbook
     {
         //static string connectionString = @"Data Source=DESKTOP-UGDHEEM;Initial Catalog=kursovaya;Integrated Security=True;TrustServerCertificate=True";
         //static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\database\kursovaya.mdf;Integrated Security=True";
-        static string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Егор\source\repos\DebuggerHandbook\bin\Debug\database\kursova.mdf;Integrated Security = True; Connect Timeout = 30";
+        static string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\database\kursova.mdf;Integrated Security = True; Connect Timeout = 30";
         SqlConnection sqlConnection = new SqlConnection(connectionString);
 
         public void openConnection()
