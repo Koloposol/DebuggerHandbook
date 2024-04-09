@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
+using System.Data.SqlClient;
 
 namespace DebuggerHandbook
 {
@@ -20,6 +21,39 @@ namespace DebuggerHandbook
         }
 
         string applicationDirectory = Path.GetDirectoryName(Application.ExecutablePath);
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            LogInForm logInForm = new LogInForm();
+            //FIXME: сохранение поля email из формы LogIn
+            string email = "egor_lomakin@inbox.ru"/*logInForm.textBox1.Text*/;
+
+            DataBase db = new DataBase();
+
+            string query = $"SELECT surname, name, theory_count, practice_count, theory_progress, practice_progress " +
+                $"FROM users_db " +
+                $"WHERE email = '{email}'";
+            
+            SqlCommand sqlCommand = new SqlCommand(query, db.GetConnection());
+            db.openConnection();
+            SqlDataReader reader = sqlCommand.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    labelSurname.Text = reader["surname"].ToString();
+                    labelName.Text = reader["name"].ToString();
+                    labelTheory.Text = reader["theory_count"].ToString();
+                    labelPractice.Text = reader["practice_count"].ToString();
+                }
+
+            }
+            else
+                MessageBox.Show("Неудалось считать данные пользователя!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            reader.Close();
+        }
 
         //private void чтоТакоеОтладкаToolStripMenuItem_Click(object sender, EventArgs e)
         //{
@@ -60,6 +94,15 @@ namespace DebuggerHandbook
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        //Кнопка "Выйти из профиля"
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LogInForm logInForm = new LogInForm();
+            logInForm.Show();
+
+            this.Hide();
         }
 
     }
