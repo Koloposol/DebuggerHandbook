@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserProfileSettings));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxSurname = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -48,16 +48,16 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBoxName);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textBoxSurname);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBoxPassword);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxEmail);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 57);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -78,15 +78,15 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Имя";
             // 
-            // textBox4
+            // textBoxName
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(61, 144);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.MaxLength = 15;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(425, 42);
-            this.textBox4.TabIndex = 16;
+            this.textBoxName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxName.Location = new System.Drawing.Point(61, 144);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxName.MaxLength = 15;
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(425, 42);
+            this.textBoxName.TabIndex = 16;
             // 
             // label5
             // 
@@ -99,15 +99,15 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Фамилия";
             // 
-            // textBox3
+            // textBoxSurname
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(61, 55);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.MaxLength = 20;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(425, 42);
-            this.textBox3.TabIndex = 14;
+            this.textBoxSurname.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxSurname.Location = new System.Drawing.Point(61, 55);
+            this.textBoxSurname.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSurname.MaxLength = 20;
+            this.textBoxSurname.Name = "textBoxSurname";
+            this.textBoxSurname.Size = new System.Drawing.Size(425, 42);
+            this.textBoxSurname.TabIndex = 14;
             // 
             // button1
             // 
@@ -149,16 +149,16 @@
             this.button2.TabIndex = 12;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // textBoxPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(61, 322);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.MaxLength = 10;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(368, 42);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPassword.Location = new System.Drawing.Point(61, 322);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPassword.MaxLength = 10;
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(368, 42);
+            this.textBoxPassword.TabIndex = 6;
+            this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -182,15 +182,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Email:";
             // 
-            // textBox1
+            // textBoxEmail
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(61, 230);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.MaxLength = 30;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(425, 42);
-            this.textBox1.TabIndex = 4;
+            this.textBoxEmail.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxEmail.Location = new System.Drawing.Point(61, 230);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEmail.MaxLength = 30;
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(425, 42);
+            this.textBoxEmail.TabIndex = 4;
             // 
             // label4
             // 
@@ -227,16 +227,16 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox textBoxName;
+        public System.Windows.Forms.TextBox textBoxSurname;
+        public System.Windows.Forms.TextBox textBoxPassword;
+        public System.Windows.Forms.TextBox textBoxEmail;
     }
 }

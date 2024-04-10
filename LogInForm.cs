@@ -82,6 +82,7 @@ namespace DebuggerHandbook
             {
                 MainForm mainForm = new MainForm();
                 mainForm.userEmail = email;
+                mainForm.userPassword = password;
                 mainForm.Show();
 
                 this.Hide();

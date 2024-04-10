@@ -387,8 +387,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label labelTheory;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.Label labelSurname;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -404,6 +402,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        public System.Windows.Forms.Label labelName;
+        public System.Windows.Forms.Label labelSurname;
     }
 }
 

@@ -22,11 +22,13 @@ namespace DebuggerHandbook
 
         string applicationDirectory = Path.GetDirectoryName(Application.ExecutablePath);
         public string userEmail = "";
+        public string userPassword = "";
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             LogInForm logInForm = new LogInForm();
             string email = userEmail;
+            string password = userPassword;
 
             DataBase db = new DataBase();
 
@@ -109,6 +111,12 @@ namespace DebuggerHandbook
         private void button3_Click(object sender, EventArgs e)
         {
             UserProfileSettings userProfileSettings = new UserProfileSettings();
+
+            userProfileSettings.textBoxSurname.Text = labelSurname.Text;
+            userProfileSettings.textBoxName.Text = labelName.Text;
+            userProfileSettings.textBoxEmail.Text = userEmail;
+            userProfileSettings.textBoxPassword.Text = userPassword;
+            
             userProfileSettings.ShowDialog();
         }
     }
