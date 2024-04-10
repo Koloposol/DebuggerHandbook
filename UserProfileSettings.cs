@@ -81,9 +81,6 @@ namespace DebuggerHandbook
                 {
                     MessageBox.Show("Учетная запись успешно изменена!\nНеобходима повторная авторизация", "Изменение завершено!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    LogInForm logInForm = new LogInForm();
-                    logInForm.Show();
-
                     this.Close();
                 }
                 else

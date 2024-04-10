@@ -97,7 +97,8 @@ namespace DebuggerHandbook
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            LogInForm logInForm = new LogInForm();
+            logInForm.Show();
         }
 
         //Кнопка "Выйти из профиля"
@@ -106,7 +107,7 @@ namespace DebuggerHandbook
             LogInForm logInForm = new LogInForm();
             logInForm.Show();
 
-            this.Hide();
+            this.Close();
         }
 
         //Кнопка "Настройка профиля"
@@ -121,6 +122,8 @@ namespace DebuggerHandbook
             userProfileSettings.textBoxPassword.Text = userPassword;
             
             userProfileSettings.ShowDialog();
+            if (userProfileSettings.DialogResult == DialogResult.OK)
+                this.Close();
         }
     }
 }

@@ -83,9 +83,8 @@ namespace DebuggerHandbook
                 MainForm mainForm = new MainForm();
                 mainForm.userEmail = email;
                 mainForm.userPassword = password;
-                mainForm.Show();
-
                 this.Hide();
+                mainForm.ShowDialog();
             }
             else
                 MessageBox.Show("Неудалось подключиться к базе данных!\nПроверьте email и пароль.", "Ошибка авторизации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);

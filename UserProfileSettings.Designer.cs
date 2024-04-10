@@ -127,6 +127,7 @@
             // 
             this.buttonSaveSettings.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.buttonSaveSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSaveSettings.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonSaveSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSaveSettings.ForeColor = System.Drawing.Color.White;
             this.buttonSaveSettings.Location = new System.Drawing.Point(61, 373);
