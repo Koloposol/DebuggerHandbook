@@ -81,6 +81,7 @@ namespace DebuggerHandbook
             if (dataTable.Rows.Count > 0)
             {
                 MainForm mainForm = new MainForm();
+                mainForm.userEmail = email;
                 mainForm.Show();
 
                 this.Hide();

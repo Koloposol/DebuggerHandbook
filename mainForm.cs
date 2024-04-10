@@ -21,12 +21,13 @@ namespace DebuggerHandbook
         }
 
         string applicationDirectory = Path.GetDirectoryName(Application.ExecutablePath);
+        public string userEmail = "";
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             LogInForm logInForm = new LogInForm();
             //FIXME: сохранение поля email из формы LogIn
-            string email = "egor_lomakin@inbox.ru"/*logInForm.textBox1.Text*/;
+            string email = userEmail;
 
             DataBase db = new DataBase();
 
