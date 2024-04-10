@@ -34,9 +34,9 @@
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxSurname = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonViewPas = new System.Windows.Forms.Button();
+            this.buttonSaveSettings = new System.Windows.Forms.Button();
+            this.buttonHidePas = new System.Windows.Forms.Button();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,9 +51,9 @@
             this.groupBox1.Controls.Add(this.textBoxName);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.textBoxSurname);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.buttonViewPas);
+            this.groupBox1.Controls.Add(this.buttonSaveSettings);
+            this.groupBox1.Controls.Add(this.buttonHidePas);
             this.groupBox1.Controls.Add(this.textBoxPassword);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -109,45 +109,48 @@
             this.textBoxSurname.Size = new System.Drawing.Size(425, 42);
             this.textBoxSurname.TabIndex = 14;
             // 
-            // button1
+            // buttonViewPas
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(438, 321);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 43);
-            this.button1.TabIndex = 11;
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonViewPas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonViewPas.BackgroundImage")));
+            this.buttonViewPas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonViewPas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonViewPas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonViewPas.Location = new System.Drawing.Point(438, 321);
+            this.buttonViewPas.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonViewPas.Name = "buttonViewPas";
+            this.buttonViewPas.Size = new System.Drawing.Size(48, 43);
+            this.buttonViewPas.TabIndex = 11;
+            this.buttonViewPas.UseVisualStyleBackColor = true;
+            this.buttonViewPas.Click += new System.EventHandler(this.buttonViewPas_Click);
             // 
-            // button4
+            // buttonSaveSettings
             // 
-            this.button4.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(61, 373);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(427, 47);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Сохранить";
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonSaveSettings.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonSaveSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSaveSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSaveSettings.ForeColor = System.Drawing.Color.White;
+            this.buttonSaveSettings.Location = new System.Drawing.Point(61, 373);
+            this.buttonSaveSettings.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSaveSettings.Name = "buttonSaveSettings";
+            this.buttonSaveSettings.Size = new System.Drawing.Size(427, 47);
+            this.buttonSaveSettings.TabIndex = 10;
+            this.buttonSaveSettings.Text = "Сохранить";
+            this.buttonSaveSettings.UseVisualStyleBackColor = false;
+            this.buttonSaveSettings.Click += new System.EventHandler(this.buttonSaveSettings_Click);
             // 
-            // button2
+            // buttonHidePas
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(438, 321);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(48, 43);
-            this.button2.TabIndex = 12;
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonHidePas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonHidePas.BackgroundImage")));
+            this.buttonHidePas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonHidePas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonHidePas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHidePas.Location = new System.Drawing.Point(438, 321);
+            this.buttonHidePas.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonHidePas.Name = "buttonHidePas";
+            this.buttonHidePas.Size = new System.Drawing.Size(48, 43);
+            this.buttonHidePas.TabIndex = 12;
+            this.buttonHidePas.UseVisualStyleBackColor = true;
+            this.buttonHidePas.Click += new System.EventHandler(this.buttonHidePas_Click);
             // 
             // textBoxPassword
             // 
@@ -228,9 +231,9 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonViewPas;
+        private System.Windows.Forms.Button buttonSaveSettings;
+        private System.Windows.Forms.Button buttonHidePas;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;

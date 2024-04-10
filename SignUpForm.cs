@@ -59,11 +59,6 @@ namespace DebuggerHandbook
             }
         }
 
-        //private bool checkUser()
-        //{
-
-        //}
-
         //Нажатие кнопки "Зарегистрироваться"
         private void button4_Click(object sender, EventArgs e)
         {

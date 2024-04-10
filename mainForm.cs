@@ -23,6 +23,7 @@ namespace DebuggerHandbook
         string applicationDirectory = Path.GetDirectoryName(Application.ExecutablePath);
         public string userEmail = "";
         public string userPassword = "";
+        public int userId;
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -32,7 +33,7 @@ namespace DebuggerHandbook
 
             DataBase db = new DataBase();
 
-            string query = $"SELECT surname, name, theory_count, practice_count, theory_progress, practice_progress " +
+            string query = $"SELECT id, surname, name, theory_count, practice_count, theory_progress, practice_progress " +
                 $"FROM users_db " +
                 $"WHERE email = '{email}'";
             
@@ -44,6 +45,7 @@ namespace DebuggerHandbook
             {
                 while (reader.Read())
                 {
+                    userId = (int)reader["id"];
                     labelSurname.Text = reader["surname"].ToString();
                     labelName.Text = reader["name"].ToString();
                     labelTheory.Text = reader["theory_count"].ToString();
@@ -112,6 +114,7 @@ namespace DebuggerHandbook
         {
             UserProfileSettings userProfileSettings = new UserProfileSettings();
 
+            userProfileSettings.userId = userId;
             userProfileSettings.textBoxSurname.Text = labelSurname.Text;
             userProfileSettings.textBoxName.Text = labelName.Text;
             userProfileSettings.textBoxEmail.Text = userEmail;
