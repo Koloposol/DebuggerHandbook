@@ -92,8 +92,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(228, 37);
             this.button3.TabIndex = 8;
-            this.button3.Text = "Изменить профиль";
+            this.button3.Text = "Настройка профиля";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -113,17 +114,17 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(8, 26);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(228, 178);
+            this.pictureBox1.Size = new System.Drawing.Size(228, 228);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
             // labelPractice
             // 
             this.labelPractice.AutoSize = true;
-            this.labelPractice.Location = new System.Drawing.Point(191, 341);
+            this.labelPractice.Location = new System.Drawing.Point(199, 351);
             this.labelPractice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPractice.Name = "labelPractice";
             this.labelPractice.Size = new System.Drawing.Size(45, 28);
@@ -133,7 +134,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 341);
+            this.label6.Location = new System.Drawing.Point(3, 351);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(197, 28);
@@ -143,7 +144,7 @@
             // labelTheory
             // 
             this.labelTheory.AutoSize = true;
-            this.labelTheory.Location = new System.Drawing.Point(191, 304);
+            this.labelTheory.Location = new System.Drawing.Point(199, 323);
             this.labelTheory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTheory.Name = "labelTheory";
             this.labelTheory.Size = new System.Drawing.Size(45, 28);
@@ -153,7 +154,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 304);
+            this.label4.Location = new System.Drawing.Point(3, 323);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(196, 28);
@@ -163,7 +164,7 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(3, 249);
+            this.labelName.Location = new System.Drawing.Point(3, 287);
             this.labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(51, 28);
@@ -173,7 +174,7 @@
             // labelSurname
             // 
             this.labelSurname.AutoSize = true;
-            this.labelSurname.Location = new System.Drawing.Point(3, 220);
+            this.labelSurname.Location = new System.Drawing.Point(3, 258);
             this.labelSurname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSurname.Name = "labelSurname";
             this.labelSurname.Size = new System.Drawing.Size(96, 28);

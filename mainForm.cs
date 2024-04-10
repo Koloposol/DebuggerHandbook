@@ -26,7 +26,6 @@ namespace DebuggerHandbook
         private void MainForm_Load(object sender, EventArgs e)
         {
             LogInForm logInForm = new LogInForm();
-            //FIXME: сохранение поля email из формы LogIn
             string email = userEmail;
 
             DataBase db = new DataBase();
@@ -106,5 +105,11 @@ namespace DebuggerHandbook
             this.Hide();
         }
 
+        //Кнопка "Настройка профиля"
+        private void button3_Click(object sender, EventArgs e)
+        {
+            UserProfileSettings userProfileSettings = new UserProfileSettings();
+            userProfileSettings.ShowDialog();
+        }
     }
 }
