@@ -66,12 +66,7 @@ namespace DebuggerHandbook
                     );
 
                 if (messageResult == DialogResult.OK)
-                {
-                    MainForm mainForm = new MainForm();
-                    mainForm.Show();
-
                     this.Close();
-                }
 
                 //AddResultToDB();
             }
@@ -87,12 +82,7 @@ namespace DebuggerHandbook
                     );
 
                 if (messageResult == DialogResult.OK)
-                {
-                    MainForm mainForm = new MainForm();
-                    mainForm.Show();
-
                     this.Close();
-                }
             }
         }
     }

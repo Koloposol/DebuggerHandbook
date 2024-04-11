@@ -48,7 +48,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonPactice1 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -283,7 +283,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button5);
+            this.groupBox4.Controls.Add(this.buttonPactice1);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox4.Location = new System.Drawing.Point(507, 53);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -294,19 +294,19 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Практический модуль";
             // 
-            // button5
+            // buttonPactice1
             // 
-            this.button5.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(7, 70);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(221, 37);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Практикум 1";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.buttonPactice1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonPactice1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonPactice1.ForeColor = System.Drawing.Color.White;
+            this.buttonPactice1.Location = new System.Drawing.Point(7, 70);
+            this.buttonPactice1.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPactice1.Name = "buttonPactice1";
+            this.buttonPactice1.Size = new System.Drawing.Size(221, 37);
+            this.buttonPactice1.TabIndex = 10;
+            this.buttonPactice1.Text = "Практикум 1";
+            this.buttonPactice1.UseVisualStyleBackColor = false;
+            this.buttonPactice1.Click += new System.EventHandler(this.buttonPactice1_Click);
             // 
             // groupBox5
             // 
@@ -400,7 +400,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button buttonProfileSettings;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonPactice1;
         private System.Windows.Forms.Button button6;
         public System.Windows.Forms.Label labelName;
         public System.Windows.Forms.Label labelSurname;
