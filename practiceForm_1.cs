@@ -51,7 +51,7 @@ namespace DebuggerHandbook
             if (radioButton7.Checked) totalScore++;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonComplited_Click(object sender, EventArgs e)
         {
             CalculateResult();
             

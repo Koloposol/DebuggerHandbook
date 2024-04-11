@@ -70,12 +70,12 @@ namespace DebuggerHandbook
         //    this.Hide();
         //}
         
-        private void pictureBox2_MouseClick(object sender, MouseEventArgs e)
+        private void buttonWebsite_MouseClick(object sender, MouseEventArgs e)
         {
             Process.Start("https://nggtk.ru/");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonAbout_Click(object sender, EventArgs e)
         {
             //TODO заменить about.html формой aboutForm
             viewForm viewForm = new viewForm();
@@ -101,8 +101,7 @@ namespace DebuggerHandbook
             logInForm.Show();
         }
 
-        //Кнопка "Выйти из профиля"
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonLogOut_Click(object sender, EventArgs e)
         {
             LogInForm logInForm = new LogInForm();
             logInForm.Show();
@@ -110,8 +109,7 @@ namespace DebuggerHandbook
             this.Close();
         }
 
-        //Кнопка "Настройка профиля"
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonProfileSettings_Click(object sender, EventArgs e)
         {
             UserProfileSettings userProfileSettings = new UserProfileSettings();
 

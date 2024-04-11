@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonProfileSettings = new System.Windows.Forms.Button();
+            this.buttonLogOut = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelPractice = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -41,10 +41,10 @@
             this.labelSurname = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonAbout = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.buttonWebsite = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -55,7 +55,7 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonWebsite)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -63,8 +63,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.buttonProfileSettings);
+            this.groupBox1.Controls.Add(this.buttonLogOut);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.labelPractice);
             this.groupBox1.Controls.Add(this.label6);
@@ -82,33 +82,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Профиль";
             // 
-            // button3
+            // buttonProfileSettings
             // 
-            this.button3.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(8, 391);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(228, 37);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Настройка профиля";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonProfileSettings.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonProfileSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonProfileSettings.ForeColor = System.Drawing.Color.White;
+            this.buttonProfileSettings.Location = new System.Drawing.Point(8, 391);
+            this.buttonProfileSettings.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonProfileSettings.Name = "buttonProfileSettings";
+            this.buttonProfileSettings.Size = new System.Drawing.Size(228, 37);
+            this.buttonProfileSettings.TabIndex = 8;
+            this.buttonProfileSettings.Text = "Настройка профиля";
+            this.buttonProfileSettings.UseVisualStyleBackColor = false;
+            this.buttonProfileSettings.Click += new System.EventHandler(this.buttonProfileSettings_Click);
             // 
-            // button2
+            // buttonLogOut
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(8, 436);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(228, 37);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Выйти из профиля";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonLogOut.BackColor = System.Drawing.Color.Red;
+            this.buttonLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLogOut.ForeColor = System.Drawing.Color.White;
+            this.buttonLogOut.Location = new System.Drawing.Point(8, 436);
+            this.buttonLogOut.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonLogOut.Name = "buttonLogOut";
+            this.buttonLogOut.Size = new System.Drawing.Size(228, 37);
+            this.buttonLogOut.TabIndex = 4;
+            this.buttonLogOut.Text = "Выйти из профиля";
+            this.buttonLogOut.UseVisualStyleBackColor = false;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // pictureBox1
             // 
@@ -184,10 +184,10 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.buttonAbout);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.pictureBox2);
+            this.groupBox2.Controls.Add(this.buttonWebsite);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox2.Location = new System.Drawing.Point(0, 479);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
@@ -208,19 +208,19 @@
             this.label10.Text = "Приволжский федеральный округ., Самарская область, г.о. Новокуйбышевск, ул. Успен" +
     "ского, 2";
             // 
-            // button1
+            // buttonAbout
             // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(843, 23);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 37);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "О программе";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAbout.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonAbout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAbout.ForeColor = System.Drawing.Color.White;
+            this.buttonAbout.Location = new System.Drawing.Point(843, 23);
+            this.buttonAbout.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAbout.Name = "buttonAbout";
+            this.buttonAbout.Size = new System.Drawing.Size(140, 37);
+            this.buttonAbout.TabIndex = 3;
+            this.buttonAbout.Text = "О программе";
+            this.buttonAbout.UseVisualStyleBackColor = false;
+            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
             // label9
             // 
@@ -242,18 +242,18 @@
             this.label8.TabIndex = 1;
             this.label8.Text = "Телефон: 8(846)35 6-60-35";
             // 
-            // pictureBox2
+            // buttonWebsite
             // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(291, 12);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(289, 55);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseClick);
+            this.buttonWebsite.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonWebsite.BackgroundImage")));
+            this.buttonWebsite.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonWebsite.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonWebsite.Location = new System.Drawing.Point(291, 12);
+            this.buttonWebsite.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonWebsite.Name = "buttonWebsite";
+            this.buttonWebsite.Size = new System.Drawing.Size(289, 55);
+            this.buttonWebsite.TabIndex = 0;
+            this.buttonWebsite.TabStop = false;
+            this.buttonWebsite.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonWebsite_MouseClick);
             // 
             // groupBox3
             // 
@@ -370,7 +370,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonWebsite)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
@@ -389,16 +389,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox buttonWebsite;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonAbout;
+        private System.Windows.Forms.Button buttonLogOut;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonProfileSettings;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;

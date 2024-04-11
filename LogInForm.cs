@@ -14,30 +14,26 @@ namespace DebuggerHandbook
 {
     public partial class LogInForm : Form
     {
-
-
         public LogInForm()
         {
             InitializeComponent();
         }
 
-        //Отобразить пароль
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonViewPassword_Click(object sender, EventArgs e)
         {
-            textBox2.UseSystemPasswordChar = false;
-            button1.Visible = false;
-            button2.Visible = true;
+            textBoxPassword.UseSystemPasswordChar = false;
+            buttonViewPassword.Visible = false;
+            buttonHidePassword.Visible = true;
         }
 
-        //Скрыть пароль
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonHidePassword_Click(object sender, EventArgs e)
         {
-            textBox2.UseSystemPasswordChar = true;
-            button2.Visible = false;
-            button1.Visible = true;
+            textBoxPassword.UseSystemPasswordChar = true;
+            buttonHidePassword.Visible = false;
+            buttonViewPassword.Visible = true;
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void buttonSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             SignUpForm signUpForm = new SignUpForm();   
             signUpForm.Show();
@@ -47,23 +43,22 @@ namespace DebuggerHandbook
 
         private void CheckingValidityOfFields()
         {
-            if (textBox1.Text == "" || textBox2.Text == "")
+            if (textBoxEmail.Text == "" || textBoxPassword.Text == "")
                 MessageBox.Show("Необходимо заполнить все поля!", "Ошибка авторизации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
                 string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-                if (!Regex.IsMatch(textBox1.Text, pattern, RegexOptions.IgnoreCase))
+                if (!Regex.IsMatch(textBoxEmail.Text, pattern, RegexOptions.IgnoreCase))
                     MessageBox.Show("Email указан в неверном формате!", "Ошибка авторизации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        //Нажатие кнопки "Войти"
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonLogIn_Click(object sender, EventArgs e)
         {
             CheckingValidityOfFields();
 
-            string email = textBox1.Text;
-            string password = textBox2.Text;
+            string email = textBoxEmail.Text;
+            string password = textBoxPassword.Text;
 
             DataBase db = new DataBase();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();

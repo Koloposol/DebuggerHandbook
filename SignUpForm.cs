@@ -25,51 +25,48 @@ namespace DebuggerHandbook
             logInForm.Show();
         }
 
-        //Отобразить пароль
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonViewPassword_Click(object sender, EventArgs e)
         {
-            textBox2.UseSystemPasswordChar = false;
-            button1.Visible = false;
-            button2.Visible = true;
+            textBoxPassword.UseSystemPasswordChar = false;
+            buttonViewPassword.Visible = false;
+            buttonHidePassword.Visible = true;
         }
 
-        //Скрыть пароль
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonHidePassword_Click(object sender, EventArgs e)
         {
-            textBox2.UseSystemPasswordChar = true;
-            button2.Visible = false;
-            button1.Visible = true;
+            textBoxPassword.UseSystemPasswordChar = true;
+            buttonHidePassword.Visible = false;
+            buttonViewPassword.Visible = true;
         }
 
         private void CheckingValidityOfFields()
         {
-            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "")
+            if (textBoxEmail.Text == "" || textBoxPassword.Text == "" || textBoxSurname.Text == "" || textBoxName.Text == "")
                 MessageBox.Show("Необходимо заполнить все поля!", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
                 string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-                if (!Regex.IsMatch(textBox1.Text, pattern, RegexOptions.IgnoreCase))
+                if (!Regex.IsMatch(textBoxEmail.Text, pattern, RegexOptions.IgnoreCase))
                     MessageBox.Show("Email указан в неверном формате!", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 string fioPattern = @"[А-Яа-я]";
-                if (!Regex.IsMatch(textBox3.Text, fioPattern, RegexOptions.IgnoreCase))
+                if (!Regex.IsMatch(textBoxSurname.Text, fioPattern, RegexOptions.IgnoreCase))
                     MessageBox.Show("Фамилия указано в неверном формате!", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                else if (!Regex.IsMatch(textBox4.Text, fioPattern, RegexOptions.IgnoreCase))
+                else if (!Regex.IsMatch(textBoxName.Text, fioPattern, RegexOptions.IgnoreCase))
                     MessageBox.Show("Имя указано в неверном формате!", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        //Нажатие кнопки "Зарегистрироваться"
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonSignUp_Click(object sender, EventArgs e)
         {
             try
             {
                 CheckingValidityOfFields();
 
-                string surname = textBox3.Text;
-                string name = textBox4.Text;
-                string email = textBox1.Text;
-                string password = textBox2.Text;
+                string surname = textBoxSurname.Text;
+                string name = textBoxName.Text;
+                string email = textBoxEmail.Text;
+                string password = textBoxPassword.Text;
 
                 DataBase db = new DataBase();
 
@@ -97,8 +94,8 @@ namespace DebuggerHandbook
             catch (Exception ex)
             {
                 MessageBox.Show("Неудалось создать учетную запись!\nВозможно указанные email или пароль уже зарегистрированы.", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                textBox1.Text = "";
-                textBox2.Text = "";
+                textBoxEmail.Text = "";
+                textBoxPassword.Text = "";
                 return;
             }
         }

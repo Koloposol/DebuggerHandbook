@@ -32,13 +32,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.buttonSignUp = new System.Windows.Forms.LinkLabel();
+            this.buttonLogIn = new System.Windows.Forms.Button();
+            this.buttonViewPassword = new System.Windows.Forms.Button();
+            this.buttonHidePassword = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -77,15 +77,15 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Пароль:";
             // 
-            // textBox1
+            // textBoxEmail
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(61, 58);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.MaxLength = 30;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(425, 42);
-            this.textBox1.TabIndex = 4;
+            this.textBoxEmail.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxEmail.Location = new System.Drawing.Point(61, 58);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEmail.MaxLength = 30;
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(425, 42);
+            this.textBoxEmail.TabIndex = 4;
             // 
             // label4
             // 
@@ -99,90 +99,90 @@
             this.label4.Text = "База знаний «Отладчик»";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // textBoxPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(61, 139);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.MaxLength = 10;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(368, 42);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPassword.Location = new System.Drawing.Point(61, 139);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPassword.MaxLength = 10;
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(368, 42);
+            this.textBoxPassword.TabIndex = 6;
+            this.textBoxPassword.UseSystemPasswordChar = true;
             // 
-            // linkLabel1
+            // buttonSignUp
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.SkyBlue;
-            this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.MediumSpringGreen;
-            this.linkLabel1.Location = new System.Drawing.Point(0, 345);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(561, 46);
-            this.linkLabel1.TabIndex = 7;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Регистрация";
-            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.buttonSignUp.ActiveLinkColor = System.Drawing.Color.SkyBlue;
+            this.buttonSignUp.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonSignUp.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSignUp.LinkColor = System.Drawing.Color.MediumSpringGreen;
+            this.buttonSignUp.Location = new System.Drawing.Point(0, 345);
+            this.buttonSignUp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.buttonSignUp.Name = "buttonSignUp";
+            this.buttonSignUp.Size = new System.Drawing.Size(561, 46);
+            this.buttonSignUp.TabIndex = 7;
+            this.buttonSignUp.TabStop = true;
+            this.buttonSignUp.Text = "Регистрация";
+            this.buttonSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonSignUp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.buttonSignUp_LinkClicked);
             // 
-            // button4
+            // buttonLogIn
             // 
-            this.button4.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(61, 190);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(427, 47);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Войти";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonLogIn.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonLogIn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLogIn.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLogIn.ForeColor = System.Drawing.Color.White;
+            this.buttonLogIn.Location = new System.Drawing.Point(61, 190);
+            this.buttonLogIn.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonLogIn.Name = "buttonLogIn";
+            this.buttonLogIn.Size = new System.Drawing.Size(427, 47);
+            this.buttonLogIn.TabIndex = 10;
+            this.buttonLogIn.Text = "Войти";
+            this.buttonLogIn.UseVisualStyleBackColor = false;
+            this.buttonLogIn.Click += new System.EventHandler(this.buttonLogIn_Click);
             // 
-            // button1
+            // buttonViewPassword
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(440, 139);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 43);
-            this.button1.TabIndex = 11;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonViewPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonViewPassword.BackgroundImage")));
+            this.buttonViewPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonViewPassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonViewPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonViewPassword.Location = new System.Drawing.Point(440, 139);
+            this.buttonViewPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonViewPassword.Name = "buttonViewPassword";
+            this.buttonViewPassword.Size = new System.Drawing.Size(48, 43);
+            this.buttonViewPassword.TabIndex = 11;
+            this.buttonViewPassword.UseVisualStyleBackColor = true;
+            this.buttonViewPassword.Click += new System.EventHandler(this.buttonViewPassword_Click);
             // 
-            // button2
+            // buttonHidePassword
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(440, 139);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(48, 43);
-            this.button2.TabIndex = 12;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonHidePassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonHidePassword.BackgroundImage")));
+            this.buttonHidePassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonHidePassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonHidePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHidePassword.Location = new System.Drawing.Point(440, 139);
+            this.buttonHidePassword.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonHidePassword.Name = "buttonHidePassword";
+            this.buttonHidePassword.Size = new System.Drawing.Size(48, 43);
+            this.buttonHidePassword.TabIndex = 12;
+            this.buttonHidePassword.UseVisualStyleBackColor = true;
+            this.buttonHidePassword.Click += new System.EventHandler(this.buttonHidePassword_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.buttonViewPassword);
+            this.groupBox1.Controls.Add(this.buttonLogIn);
+            this.groupBox1.Controls.Add(this.buttonHidePassword);
+            this.groupBox1.Controls.Add(this.textBoxPassword);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxEmail);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 96);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(561, 257);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
@@ -195,7 +195,7 @@
             this.ClientSize = new System.Drawing.Size(561, 391);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.buttonSignUp);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -216,12 +216,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.LinkLabel buttonSignUp;
+        private System.Windows.Forms.Button buttonLogIn;
+        private System.Windows.Forms.Button buttonViewPassword;
+        private System.Windows.Forms.Button buttonHidePassword;
         private System.Windows.Forms.GroupBox groupBox1;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBoxEmail;
     }
 }
