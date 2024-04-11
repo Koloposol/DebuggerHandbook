@@ -301,6 +301,7 @@
             this.buttonTheory1.TabIndex = 9;
             this.buttonTheory1.Text = "лекция 1";
             this.buttonTheory1.UseVisualStyleBackColor = false;
+            this.buttonTheory1.Click += new System.EventHandler(this.buttonTheory1_Click);
             // 
             // groupBox4
             // 

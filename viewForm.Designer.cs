@@ -42,7 +42,7 @@
             this.backButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.backButton.ForeColor = System.Drawing.Color.White;
             this.backButton.Location = new System.Drawing.Point(13, 11);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backButton.Margin = new System.Windows.Forms.Padding(4);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(128, 43);
             this.backButton.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Top;
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.webBrowser1.Margin = new System.Windows.Forms.Padding(4);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(27, 25);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(1067, 500);
@@ -65,10 +65,11 @@
             this.buttonReaded.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonReaded.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonReaded.DialogResult = System.Windows.Forms.DialogResult.Yes;
             this.buttonReaded.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonReaded.ForeColor = System.Drawing.Color.White;
             this.buttonReaded.Location = new System.Drawing.Point(912, 11);
-            this.buttonReaded.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonReaded.Margin = new System.Windows.Forms.Padding(4);
             this.buttonReaded.Name = "buttonReaded";
             this.buttonReaded.Size = new System.Drawing.Size(141, 43);
             this.buttonReaded.TabIndex = 3;
@@ -99,7 +100,7 @@
             this.Controls.Add(this.webBrowser1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "viewForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

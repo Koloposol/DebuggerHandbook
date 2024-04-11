@@ -24,8 +24,6 @@ namespace DebuggerHandbook
 
         private void buttonReaded_Click(object sender, EventArgs e)
         {
-            //AddResultToDB();
-
             this.Close();
         }
     }
