@@ -46,12 +46,26 @@
             this.label8 = new System.Windows.Forms.Label();
             this.buttonWebsite = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonTheory1 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.buttonPactice1 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.buttonTheory2 = new System.Windows.Forms.Button();
+            this.buttonTheory4 = new System.Windows.Forms.Button();
+            this.buttonTheory3 = new System.Windows.Forms.Button();
+            this.buttonTheory8 = new System.Windows.Forms.Button();
+            this.buttonTheory7 = new System.Windows.Forms.Button();
+            this.buttonTheory6 = new System.Windows.Forms.Button();
+            this.buttonTheory5 = new System.Windows.Forms.Button();
+            this.buttonPactice2 = new System.Windows.Forms.Button();
+            this.buttonPactice4 = new System.Windows.Forms.Button();
+            this.buttonPactice3 = new System.Windows.Forms.Button();
+            this.buttonPactice8 = new System.Windows.Forms.Button();
+            this.buttonPactice7 = new System.Windows.Forms.Button();
+            this.buttonPactice6 = new System.Windows.Forms.Button();
+            this.buttonPactice5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -257,7 +271,14 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.buttonTheory8);
+            this.groupBox3.Controls.Add(this.buttonTheory7);
+            this.groupBox3.Controls.Add(this.buttonTheory6);
+            this.groupBox3.Controls.Add(this.buttonTheory5);
+            this.groupBox3.Controls.Add(this.buttonTheory4);
+            this.groupBox3.Controls.Add(this.buttonTheory3);
+            this.groupBox3.Controls.Add(this.buttonTheory2);
+            this.groupBox3.Controls.Add(this.buttonTheory1);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox3.Location = new System.Drawing.Point(255, 53);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -268,21 +289,28 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Теоретический модуль";
             // 
-            // button4
+            // buttonTheory1
             // 
-            this.button4.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(7, 70);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(232, 37);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "лекция 1";
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonTheory1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonTheory1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTheory1.ForeColor = System.Drawing.Color.White;
+            this.buttonTheory1.Location = new System.Drawing.Point(7, 57);
+            this.buttonTheory1.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTheory1.Name = "buttonTheory1";
+            this.buttonTheory1.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory1.TabIndex = 9;
+            this.buttonTheory1.Text = "лекция 1";
+            this.buttonTheory1.UseVisualStyleBackColor = false;
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.buttonPactice8);
+            this.groupBox4.Controls.Add(this.buttonPactice7);
+            this.groupBox4.Controls.Add(this.buttonPactice6);
+            this.groupBox4.Controls.Add(this.buttonPactice5);
+            this.groupBox4.Controls.Add(this.buttonPactice4);
+            this.groupBox4.Controls.Add(this.buttonPactice3);
+            this.groupBox4.Controls.Add(this.buttonPactice2);
             this.groupBox4.Controls.Add(this.buttonPactice1);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox4.Location = new System.Drawing.Point(507, 53);
@@ -299,7 +327,7 @@
             this.buttonPactice1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.buttonPactice1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonPactice1.ForeColor = System.Drawing.Color.White;
-            this.buttonPactice1.Location = new System.Drawing.Point(7, 70);
+            this.buttonPactice1.Location = new System.Drawing.Point(7, 57);
             this.buttonPactice1.Margin = new System.Windows.Forms.Padding(4);
             this.buttonPactice1.Name = "buttonPactice1";
             this.buttonPactice1.Size = new System.Drawing.Size(221, 37);
@@ -326,7 +354,7 @@
             this.button6.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(7, 70);
+            this.button6.Location = new System.Drawing.Point(6, 57);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(221, 37);
@@ -343,6 +371,188 @@
             this.label11.Size = new System.Drawing.Size(369, 41);
             this.label11.TabIndex = 5;
             this.label11.Text = "База знаний «Отладчик»";
+            // 
+            // buttonTheory2
+            // 
+            this.buttonTheory2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonTheory2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTheory2.ForeColor = System.Drawing.Color.White;
+            this.buttonTheory2.Location = new System.Drawing.Point(7, 102);
+            this.buttonTheory2.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTheory2.Name = "buttonTheory2";
+            this.buttonTheory2.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory2.TabIndex = 10;
+            this.buttonTheory2.Text = "лекция 2";
+            this.buttonTheory2.UseVisualStyleBackColor = false;
+            // 
+            // buttonTheory4
+            // 
+            this.buttonTheory4.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonTheory4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTheory4.ForeColor = System.Drawing.Color.White;
+            this.buttonTheory4.Location = new System.Drawing.Point(7, 192);
+            this.buttonTheory4.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTheory4.Name = "buttonTheory4";
+            this.buttonTheory4.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory4.TabIndex = 12;
+            this.buttonTheory4.Text = "лекция 4";
+            this.buttonTheory4.UseVisualStyleBackColor = false;
+            // 
+            // buttonTheory3
+            // 
+            this.buttonTheory3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonTheory3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTheory3.ForeColor = System.Drawing.Color.White;
+            this.buttonTheory3.Location = new System.Drawing.Point(7, 147);
+            this.buttonTheory3.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTheory3.Name = "buttonTheory3";
+            this.buttonTheory3.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory3.TabIndex = 11;
+            this.buttonTheory3.Text = "лекция 3";
+            this.buttonTheory3.UseVisualStyleBackColor = false;
+            // 
+            // buttonTheory8
+            // 
+            this.buttonTheory8.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonTheory8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTheory8.ForeColor = System.Drawing.Color.White;
+            this.buttonTheory8.Location = new System.Drawing.Point(6, 372);
+            this.buttonTheory8.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTheory8.Name = "buttonTheory8";
+            this.buttonTheory8.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory8.TabIndex = 16;
+            this.buttonTheory8.Text = "лекция 8";
+            this.buttonTheory8.UseVisualStyleBackColor = false;
+            // 
+            // buttonTheory7
+            // 
+            this.buttonTheory7.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonTheory7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTheory7.ForeColor = System.Drawing.Color.White;
+            this.buttonTheory7.Location = new System.Drawing.Point(6, 327);
+            this.buttonTheory7.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTheory7.Name = "buttonTheory7";
+            this.buttonTheory7.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory7.TabIndex = 15;
+            this.buttonTheory7.Text = "лекция 7";
+            this.buttonTheory7.UseVisualStyleBackColor = false;
+            // 
+            // buttonTheory6
+            // 
+            this.buttonTheory6.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonTheory6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTheory6.ForeColor = System.Drawing.Color.White;
+            this.buttonTheory6.Location = new System.Drawing.Point(6, 282);
+            this.buttonTheory6.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTheory6.Name = "buttonTheory6";
+            this.buttonTheory6.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory6.TabIndex = 14;
+            this.buttonTheory6.Text = "лекция 6";
+            this.buttonTheory6.UseVisualStyleBackColor = false;
+            // 
+            // buttonTheory5
+            // 
+            this.buttonTheory5.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonTheory5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTheory5.ForeColor = System.Drawing.Color.White;
+            this.buttonTheory5.Location = new System.Drawing.Point(6, 237);
+            this.buttonTheory5.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTheory5.Name = "buttonTheory5";
+            this.buttonTheory5.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory5.TabIndex = 13;
+            this.buttonTheory5.Text = "лекция 5";
+            this.buttonTheory5.UseVisualStyleBackColor = false;
+            // 
+            // buttonPactice2
+            // 
+            this.buttonPactice2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonPactice2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonPactice2.ForeColor = System.Drawing.Color.White;
+            this.buttonPactice2.Location = new System.Drawing.Point(7, 102);
+            this.buttonPactice2.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPactice2.Name = "buttonPactice2";
+            this.buttonPactice2.Size = new System.Drawing.Size(221, 37);
+            this.buttonPactice2.TabIndex = 11;
+            this.buttonPactice2.Text = "Практикум 2";
+            this.buttonPactice2.UseVisualStyleBackColor = false;
+            // 
+            // buttonPactice4
+            // 
+            this.buttonPactice4.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonPactice4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonPactice4.ForeColor = System.Drawing.Color.White;
+            this.buttonPactice4.Location = new System.Drawing.Point(7, 192);
+            this.buttonPactice4.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPactice4.Name = "buttonPactice4";
+            this.buttonPactice4.Size = new System.Drawing.Size(221, 37);
+            this.buttonPactice4.TabIndex = 13;
+            this.buttonPactice4.Text = "Практикум 4";
+            this.buttonPactice4.UseVisualStyleBackColor = false;
+            // 
+            // buttonPactice3
+            // 
+            this.buttonPactice3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonPactice3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonPactice3.ForeColor = System.Drawing.Color.White;
+            this.buttonPactice3.Location = new System.Drawing.Point(7, 147);
+            this.buttonPactice3.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPactice3.Name = "buttonPactice3";
+            this.buttonPactice3.Size = new System.Drawing.Size(221, 37);
+            this.buttonPactice3.TabIndex = 12;
+            this.buttonPactice3.Text = "Практикум 3";
+            this.buttonPactice3.UseVisualStyleBackColor = false;
+            // 
+            // buttonPactice8
+            // 
+            this.buttonPactice8.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonPactice8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonPactice8.ForeColor = System.Drawing.Color.White;
+            this.buttonPactice8.Location = new System.Drawing.Point(7, 372);
+            this.buttonPactice8.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPactice8.Name = "buttonPactice8";
+            this.buttonPactice8.Size = new System.Drawing.Size(221, 37);
+            this.buttonPactice8.TabIndex = 17;
+            this.buttonPactice8.Text = "Практикум 8";
+            this.buttonPactice8.UseVisualStyleBackColor = false;
+            // 
+            // buttonPactice7
+            // 
+            this.buttonPactice7.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonPactice7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonPactice7.ForeColor = System.Drawing.Color.White;
+            this.buttonPactice7.Location = new System.Drawing.Point(7, 327);
+            this.buttonPactice7.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPactice7.Name = "buttonPactice7";
+            this.buttonPactice7.Size = new System.Drawing.Size(221, 37);
+            this.buttonPactice7.TabIndex = 16;
+            this.buttonPactice7.Text = "Практикум 7";
+            this.buttonPactice7.UseVisualStyleBackColor = false;
+            // 
+            // buttonPactice6
+            // 
+            this.buttonPactice6.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonPactice6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonPactice6.ForeColor = System.Drawing.Color.White;
+            this.buttonPactice6.Location = new System.Drawing.Point(7, 282);
+            this.buttonPactice6.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPactice6.Name = "buttonPactice6";
+            this.buttonPactice6.Size = new System.Drawing.Size(221, 37);
+            this.buttonPactice6.TabIndex = 15;
+            this.buttonPactice6.Text = "Практикум 6";
+            this.buttonPactice6.UseVisualStyleBackColor = false;
+            // 
+            // buttonPactice5
+            // 
+            this.buttonPactice5.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonPactice5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonPactice5.ForeColor = System.Drawing.Color.White;
+            this.buttonPactice5.Location = new System.Drawing.Point(7, 237);
+            this.buttonPactice5.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPactice5.Name = "buttonPactice5";
+            this.buttonPactice5.Size = new System.Drawing.Size(221, 37);
+            this.buttonPactice5.TabIndex = 14;
+            this.buttonPactice5.Text = "Практикум 5";
+            this.buttonPactice5.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
@@ -399,11 +609,25 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button buttonProfileSettings;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonTheory1;
         private System.Windows.Forms.Button buttonPactice1;
         private System.Windows.Forms.Button button6;
         public System.Windows.Forms.Label labelName;
         public System.Windows.Forms.Label labelSurname;
+        private System.Windows.Forms.Button buttonTheory8;
+        private System.Windows.Forms.Button buttonTheory7;
+        private System.Windows.Forms.Button buttonTheory6;
+        private System.Windows.Forms.Button buttonTheory5;
+        private System.Windows.Forms.Button buttonTheory4;
+        private System.Windows.Forms.Button buttonTheory3;
+        private System.Windows.Forms.Button buttonTheory2;
+        private System.Windows.Forms.Button buttonPactice8;
+        private System.Windows.Forms.Button buttonPactice7;
+        private System.Windows.Forms.Button buttonPactice6;
+        private System.Windows.Forms.Button buttonPactice5;
+        private System.Windows.Forms.Button buttonPactice4;
+        private System.Windows.Forms.Button buttonPactice3;
+        private System.Windows.Forms.Button buttonPactice2;
     }
 }
 

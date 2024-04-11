@@ -28,12 +28,7 @@ namespace DebuggerHandbook
                 );
 
             if (messageResult == DialogResult.Yes)
-            {
-                MainForm mainForm = new MainForm();
-                mainForm.Show();
-
                 this.Close();
-            }
         }
 
         private int totalScore = 0;
