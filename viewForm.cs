@@ -19,18 +19,12 @@ namespace DebuggerHandbook
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
-
             this.Close();
         }
 
         private void buttonReaded_Click(object sender, EventArgs e)
         {
             //AddResultToDB();
-
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
 
             this.Close();
         }

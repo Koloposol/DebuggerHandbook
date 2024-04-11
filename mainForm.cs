@@ -79,20 +79,16 @@ namespace DebuggerHandbook
         {
             //TODO заменить about.html формой aboutForm
             viewForm viewForm = new viewForm();
-            viewForm.Show();
+            viewForm.ShowDialog();
 
             string lectureLink = $@"{applicationDirectory}\LecturesBase\about.html";
             viewForm.webBrowser1.Url = new Uri(lectureLink);
-
-            this.Hide();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void buttonPactice1_Click(object sender, EventArgs e)
         {
             practiceForm_1 prcticeForm = new practiceForm_1();
-            prcticeForm.Show();
-
-            this.Hide();
+            prcticeForm.ShowDialog();
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
