@@ -42,7 +42,7 @@ namespace DebuggerHandbook
         private void MainForm_Load(object sender, EventArgs e)
         {
             LoadUserData(userEmail);
-            CheckProgress();//TODO Добавить метод проверки прогресса (чтобы закрашивать кнопки прочитанных лекции/пройденных заданий)
+            CheckProgress();
         }
 
         private void buttonWebsite_MouseClick(object sender, MouseEventArgs e)
@@ -181,6 +181,8 @@ namespace DebuggerHandbook
                 string lectureLink = $@"{applicationDirectory}\LecturesBase\what_is_debugging.html";
                 viewForm.webBrowser1.Url = new Uri(lectureLink);
                 viewForm.buttonReaded.Visible = false;
+
+                viewForm.ShowDialog();
             }
         }
     }
