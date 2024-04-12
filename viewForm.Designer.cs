@@ -114,7 +114,7 @@
 
         private System.Windows.Forms.Button backButton;
         public System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.Button buttonReaded;
         private System.Windows.Forms.GroupBox groupBox1;
+        public System.Windows.Forms.Button buttonReaded;
     }
 }

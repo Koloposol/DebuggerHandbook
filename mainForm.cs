@@ -24,10 +24,25 @@ namespace DebuggerHandbook
         string applicationDirectory = Path.GetDirectoryName(Application.ExecutablePath);
         public string userEmail = "";
 
+        private void CheckProgress()
+        {
+            foreach (var button in this.groupBoxTheoty.Controls.OfType<Button>())
+            {
+                if (theoryProgress.ToString().Contains(button.Name.Substring(button.Name.Length - 1)))
+                    button.BackColor = Color.Gray;
+            }
+
+            foreach (var button in this.groupBoxPractice.Controls.OfType<Button>())
+            {
+                if (practiceProgress.ToString().Contains(button.Name.Substring(button.Name.Length - 1)))
+                    button.BackColor = Color.Gray;
+            }
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
             LoadUserData(userEmail);
-            //TODO Добавить метод проверки прогресса (чтобы закрашивать кнопки прочитанных лекции/пройденных заданий)
+            CheckProgress();//TODO Добавить метод проверки прогресса (чтобы закрашивать кнопки прочитанных лекции/пройденных заданий)
         }
 
         private void buttonWebsite_MouseClick(object sender, MouseEventArgs e)
@@ -162,9 +177,10 @@ namespace DebuggerHandbook
             }
             else
             {
-                viewReadedForm viewReadedForm = new viewReadedForm();
+                viewForm viewForm = new viewForm();
                 string lectureLink = $@"{applicationDirectory}\LecturesBase\what_is_debugging.html";
-                viewReadedForm.webBrowser1.Url = new Uri(lectureLink);
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+                viewForm.buttonReaded.Visible = false;
             }
         }
     }
