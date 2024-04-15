@@ -53,12 +53,8 @@ namespace DebuggerHandbook
 
         private void buttonAbout_Click(object sender, EventArgs e)
         {
-            //TODO заменить about.html формой aboutForm
-            viewForm viewForm = new viewForm();
-            viewForm.ShowDialog();
-
-            string lectureLink = $@"{applicationDirectory}\LecturesBase\about.html";
-            viewForm.webBrowser1.Url = new Uri(lectureLink);
+            aboutForm aboutForm = new aboutForm();
+            aboutForm.ShowDialog();
         }
 
         private void buttonPactice1_Click(object sender, EventArgs e)
