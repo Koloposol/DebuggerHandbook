@@ -11,6 +11,7 @@ using System.IO;
 using System.Diagnostics;
 using System.Data.SqlClient;
 using System.Xml.Linq;
+using System.Threading;
 
 namespace DebuggerHandbook
 {
@@ -152,9 +153,7 @@ namespace DebuggerHandbook
             db.openConnection();
 
             if (sqlCommand.ExecuteNonQuery() == 1)
-                MessageBox.Show("Данные успешно добавлены!", "Данные добавлены!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else
-                MessageBox.Show("Неудалось обноаить данные!", "Ошибка данных!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Thread.Sleep(100);
 
             db.closeConnection();
         }
@@ -179,6 +178,195 @@ namespace DebuggerHandbook
             {
                 viewForm viewForm = new viewForm();
                 string lectureLink = $@"{applicationDirectory}\LecturesBase\what_is_debugging.html";
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+                viewForm.buttonReaded.Visible = false;
+
+                viewForm.ShowDialog();
+            }
+        }
+
+        private void buttonTheory2_Click(object sender, EventArgs e)
+        {
+            if (buttonTheory2.BackColor != Color.Gray)
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\error_types.html";
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+                viewForm.ShowDialog();
+                if (viewForm.DialogResult == DialogResult.Yes)
+                {
+                    AddResultToDb(2);
+                    LoadUserData(userEmail);
+                    buttonTheory2.BackColor = Color.Gray;
+                }
+            }
+            else
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\error_types.html";
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+                viewForm.buttonReaded.Visible = false;
+
+                viewForm.ShowDialog();
+            }
+        }
+
+        private void buttonTheory3_Click(object sender, EventArgs e)
+        {
+            if (buttonTheory3.BackColor != Color.Gray) //<-
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\debugging_methods.html"; //<-
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+                viewForm.ShowDialog();
+                if (viewForm.DialogResult == DialogResult.Yes)
+                {
+                    AddResultToDb(3); //<-
+                    LoadUserData(userEmail);
+                    buttonTheory3.BackColor = Color.Gray; //<-
+                }
+            }
+            else
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\debugging_methods.html"; //<-
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+                viewForm.buttonReaded.Visible = false;
+
+                viewForm.ShowDialog();
+            }
+        }
+
+        private void buttonTheory4_Click(object sender, EventArgs e)
+        {
+            if (buttonTheory4.BackColor != Color.Gray) //<-
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\debugging_tools.html"; //<-
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+                viewForm.ShowDialog();
+                if (viewForm.DialogResult == DialogResult.Yes)
+                {
+                    AddResultToDb(4); //<-
+                    LoadUserData(userEmail);
+                    buttonTheory4.BackColor = Color.Gray; //<-
+                }
+            }
+            else
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\debugging_tools.html"; //<-
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+                viewForm.buttonReaded.Visible = false;
+
+                viewForm.ShowDialog();
+            }
+        }
+
+        private void buttonTheory5_Click(object sender, EventArgs e)
+        {
+            if (buttonTheory5.BackColor != Color.Gray) //<-
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\Profiling.html"; //<-
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+                viewForm.ShowDialog();
+                if (viewForm.DialogResult == DialogResult.Yes)
+                {
+                    AddResultToDb(5); //<-
+                    LoadUserData(userEmail);
+                    buttonTheory5.BackColor = Color.Gray; //<-
+                }
+            }
+            else
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\Profiling.html"; //<-
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+                viewForm.buttonReaded.Visible = false;
+
+                viewForm.ShowDialog();
+            }
+        }
+
+        private void buttonTheory6_Click(object sender, EventArgs e)
+        {
+            if (buttonTheory6.BackColor != Color.Gray) //<-
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\Disassembler.html"; //<-
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+                viewForm.ShowDialog();
+                if (viewForm.DialogResult == DialogResult.Yes)
+                {
+                    AddResultToDb(6); //<-
+                    LoadUserData(userEmail);
+                    buttonTheory6.BackColor = Color.Gray; //<-
+                }
+            }
+            else
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\Disassembler.html"; //<-
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+                viewForm.buttonReaded.Visible = false;
+
+                viewForm.ShowDialog();
+            }
+        }
+
+        private void buttonTheory7_Click(object sender, EventArgs e)
+        {
+            if (buttonTheory7.BackColor != Color.Gray) //<-
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\MS_Visual_Studio_Debugger.html"; //<-
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+                viewForm.ShowDialog();
+                if (viewForm.DialogResult == DialogResult.Yes)
+                {
+                    AddResultToDb(7); //<-
+                    LoadUserData(userEmail);
+                    buttonTheory7.BackColor = Color.Gray; //<-
+                }
+            }
+            else
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\MS_Visual_Studio_Debugger.html"; //<-
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+                viewForm.buttonReaded.Visible = false;
+
+                viewForm.ShowDialog();
+            }
+        }
+
+        private void buttonTheory8_Click(object sender, EventArgs e)
+        {
+            if (buttonTheory8.BackColor != Color.Gray) //<-
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\Breakpoints.html"; //<-
+                viewForm.webBrowser1.Url = new Uri(lectureLink);
+
+                viewForm.ShowDialog();
+                if (viewForm.DialogResult == DialogResult.Yes)
+                {
+                    AddResultToDb(8); //<-
+                    LoadUserData(userEmail);
+                    buttonTheory8.BackColor = Color.Gray; //<-
+                }
+            }
+            else
+            {
+                viewForm viewForm = new viewForm();
+                string lectureLink = $@"{applicationDirectory}\LecturesBase\Breakpoints.html"; //<-
                 viewForm.webBrowser1.Url = new Uri(lectureLink);
                 viewForm.buttonReaded.Visible = false;
 

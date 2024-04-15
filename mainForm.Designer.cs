@@ -301,6 +301,7 @@
             this.buttonTheory8.TabIndex = 16;
             this.buttonTheory8.Text = "лекция 8";
             this.buttonTheory8.UseVisualStyleBackColor = false;
+            this.buttonTheory8.Click += new System.EventHandler(this.buttonTheory8_Click);
             // 
             // buttonTheory7
             // 
@@ -314,6 +315,7 @@
             this.buttonTheory7.TabIndex = 15;
             this.buttonTheory7.Text = "лекция 7";
             this.buttonTheory7.UseVisualStyleBackColor = false;
+            this.buttonTheory7.Click += new System.EventHandler(this.buttonTheory7_Click);
             // 
             // buttonTheory6
             // 
@@ -327,6 +329,7 @@
             this.buttonTheory6.TabIndex = 14;
             this.buttonTheory6.Text = "лекция 6";
             this.buttonTheory6.UseVisualStyleBackColor = false;
+            this.buttonTheory6.Click += new System.EventHandler(this.buttonTheory6_Click);
             // 
             // buttonTheory5
             // 
@@ -340,6 +343,7 @@
             this.buttonTheory5.TabIndex = 13;
             this.buttonTheory5.Text = "лекция 5";
             this.buttonTheory5.UseVisualStyleBackColor = false;
+            this.buttonTheory5.Click += new System.EventHandler(this.buttonTheory5_Click);
             // 
             // buttonTheory4
             // 
@@ -353,6 +357,7 @@
             this.buttonTheory4.TabIndex = 12;
             this.buttonTheory4.Text = "лекция 4";
             this.buttonTheory4.UseVisualStyleBackColor = false;
+            this.buttonTheory4.Click += new System.EventHandler(this.buttonTheory4_Click);
             // 
             // buttonTheory3
             // 
@@ -366,6 +371,7 @@
             this.buttonTheory3.TabIndex = 11;
             this.buttonTheory3.Text = "лекция 3";
             this.buttonTheory3.UseVisualStyleBackColor = false;
+            this.buttonTheory3.Click += new System.EventHandler(this.buttonTheory3_Click);
             // 
             // buttonTheory2
             // 
@@ -379,6 +385,7 @@
             this.buttonTheory2.TabIndex = 10;
             this.buttonTheory2.Text = "лекция 2";
             this.buttonTheory2.UseVisualStyleBackColor = false;
+            this.buttonTheory2.Click += new System.EventHandler(this.buttonTheory2_Click);
             // 
             // buttonTheory1
             // 
