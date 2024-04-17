@@ -19,6 +19,12 @@ namespace DebuggerHandbook
             InitializeComponent();
         }
 
+        private void SignUpForm_Load(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(buttonHidePassword, "Скрыть пароль.");
+            toolTip1.SetToolTip(buttonViewPassword, "Показать пароль.");
+        }
+
         private void SignUpForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             LogInForm logInForm = new LogInForm();
@@ -99,5 +105,6 @@ namespace DebuggerHandbook
                 return;
             }
         }
+
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonProfileSettings = new System.Windows.Forms.Button();
@@ -66,6 +67,7 @@
             this.groupBoxLinks = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -562,6 +564,12 @@
             this.label11.TabIndex = 5;
             this.label11.Text = "База знаний «Отладчик»";
             // 
+            // toolTip1
+            // 
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Справка:";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -636,6 +644,7 @@
         private System.Windows.Forms.Button buttonPactice4;
         private System.Windows.Forms.Button buttonPactice3;
         private System.Windows.Forms.Button buttonPactice2;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

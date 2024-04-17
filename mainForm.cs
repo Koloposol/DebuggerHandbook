@@ -44,6 +44,10 @@ namespace DebuggerHandbook
         {
             LoadUserData(userEmail);
             CheckProgress();
+            toolTip1.SetToolTip(buttonProfileSettings, "Изменить данные профиля.");
+            toolTip1.SetToolTip(buttonLogOut, "Выйти из текущего профиля.");
+            toolTip1.SetToolTip(buttonAbout, "Посмотреть информацию о программе.");
+            toolTip1.SetToolTip(buttonWebsite, "Перейти на сайт колледжа.");
         }
 
         private void buttonWebsite_MouseClick(object sender, MouseEventArgs e)

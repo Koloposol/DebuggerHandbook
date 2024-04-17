@@ -21,6 +21,12 @@ namespace DebuggerHandbook
             InitializeComponent();
         }
 
+        private void UserProfileSettings_Load(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(buttonHidePas, "Скрыть пароль.");
+            toolTip1.SetToolTip(buttonViewPas, "Показать пароль.");
+        }
+
         private void buttonViewPas_Click(object sender, EventArgs e)
         {
             textBoxPassword.UseSystemPasswordChar = false;
@@ -96,5 +102,6 @@ namespace DebuggerHandbook
                 return;
             }
         }
+
     }
 }

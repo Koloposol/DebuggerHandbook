@@ -18,6 +18,12 @@ namespace DebuggerHandbook
             InitializeComponent();
         }
 
+        private void aboutForm_Load(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(buttonGitHub, "Перейти на удаленный репозиторий проекта.");
+            toolTip1.SetToolTip(linkLabel1, "Перейти на сайт колледжа.");
+        }
+
         private void buttonOK_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -32,5 +38,6 @@ namespace DebuggerHandbook
         {
             Process.Start("https://nggtk.ru/");
         }
+
     }
 }

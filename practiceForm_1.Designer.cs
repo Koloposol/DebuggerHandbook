@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(practiceForm_1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -55,6 +56,7 @@
             this.backButton = new System.Windows.Forms.Button();
             this.buttonComplited = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -369,7 +371,7 @@
             this.backButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.backButton.ForeColor = System.Drawing.Color.White;
             this.backButton.Location = new System.Drawing.Point(13, 16);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backButton.Margin = new System.Windows.Forms.Padding(4);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(128, 43);
             this.backButton.TabIndex = 1;
@@ -385,7 +387,7 @@
             this.buttonComplited.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonComplited.ForeColor = System.Drawing.Color.White;
             this.buttonComplited.Location = new System.Drawing.Point(928, 16);
-            this.buttonComplited.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonComplited.Margin = new System.Windows.Forms.Padding(4);
             this.buttonComplited.Name = "buttonComplited";
             this.buttonComplited.Size = new System.Drawing.Size(153, 43);
             this.buttonComplited.TabIndex = 2;
@@ -406,6 +408,12 @@
             this.groupBox6.TabIndex = 1;
             this.groupBox6.TabStop = false;
             // 
+            // toolTip1
+            // 
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Справка:";
+            // 
             // practiceForm_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -420,6 +428,7 @@
             this.Name = "practiceForm_1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Практический модуль №1";
+            this.Load += new System.EventHandler(this.practiceForm_1_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -467,5 +476,6 @@
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

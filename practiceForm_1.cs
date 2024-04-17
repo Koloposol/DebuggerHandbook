@@ -17,6 +17,12 @@ namespace DebuggerHandbook
             InitializeComponent();
         }
 
+        private void practiceForm_1_Load(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(backButton, "Выйти на главную форму.");
+            toolTip1.SetToolTip(buttonComplited, "Завершить практикум.");
+        }
+
         private void backButton_Click(object sender, EventArgs e)
         {
             DialogResult messageResult = MessageBox.Show(
@@ -80,5 +86,6 @@ namespace DebuggerHandbook
                     this.Close();
             }
         }
+
     }
 }
