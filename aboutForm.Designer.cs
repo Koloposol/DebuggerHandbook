@@ -54,9 +54,9 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(8, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(221, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(225, 150);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -92,22 +92,24 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.Location = new System.Drawing.Point(12, 177);
+            this.richTextBox1.Location = new System.Drawing.Point(8, 177);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(579, 98);
+            this.richTextBox1.Size = new System.Drawing.Size(583, 154);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "Программа База знаний «Отладчик» разработана студентом 3 курса НГТК Ломакиным Е. " +
-    "А. группы 38";
+    "А. группы 38\nКонтакты разработчика:\nТелефон: +8 917 150 19 03\nEmail: koloposol@y" +
+    "andex.ru";
             // 
             // buttonOK
             // 
             this.buttonOK.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.buttonOK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonOK.ForeColor = System.Drawing.Color.White;
-            this.buttonOK.Location = new System.Drawing.Point(492, 400);
+            this.buttonOK.Location = new System.Drawing.Point(493, 445);
             this.buttonOK.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(98, 37);
@@ -130,7 +132,7 @@
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 292);
+            this.pictureBox3.Location = new System.Drawing.Point(8, 337);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(50, 50);
             this.pictureBox3.TabIndex = 9;
@@ -141,7 +143,7 @@
             this.buttonGitHub.ActiveLinkColor = System.Drawing.Color.SkyBlue;
             this.buttonGitHub.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonGitHub.LinkColor = System.Drawing.Color.MediumSpringGreen;
-            this.buttonGitHub.Location = new System.Drawing.Point(69, 292);
+            this.buttonGitHub.Location = new System.Drawing.Point(65, 337);
             this.buttonGitHub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.buttonGitHub.Name = "buttonGitHub";
             this.buttonGitHub.Size = new System.Drawing.Size(447, 50);
@@ -191,7 +193,7 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 348);
+            this.pictureBox2.Location = new System.Drawing.Point(8, 393);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.TabIndex = 12;
@@ -202,7 +204,7 @@
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.SkyBlue;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.linkLabel1.LinkColor = System.Drawing.Color.MediumSpringGreen;
-            this.linkLabel1.Location = new System.Drawing.Point(69, 346);
+            this.linkLabel1.Location = new System.Drawing.Point(65, 391);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(447, 50);
@@ -217,7 +219,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(603, 444);
+            this.ClientSize = new System.Drawing.Size(603, 495);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.groupBox1);
