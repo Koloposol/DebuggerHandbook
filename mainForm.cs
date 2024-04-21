@@ -152,6 +152,7 @@ namespace DebuggerHandbook
             db.closeConnection();
         }
 
+        // Лекции
         private void buttonTheory1_Click(object sender, EventArgs e)
         {
             if (buttonTheory1.BackColor != Color.Gray)
@@ -179,7 +180,6 @@ namespace DebuggerHandbook
             }
         }
 
-        // Лекции
         private void buttonTheory2_Click(object sender, EventArgs e)
         {
             if (buttonTheory2.BackColor != Color.Gray)

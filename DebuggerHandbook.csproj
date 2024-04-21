@@ -86,6 +86,48 @@
     <Compile Include="practiceForm_1.Designer.cs">
       <DependentUpon>practiceForm_1.cs</DependentUpon>
     </Compile>
+    <Compile Include="practiceForm_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="practiceForm_2.Designer.cs">
+      <DependentUpon>practiceForm_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="practiceForm_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="practiceForm_3.Designer.cs">
+      <DependentUpon>practiceForm_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="practiceForm_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="practiceForm_4.Designer.cs">
+      <DependentUpon>practiceForm_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="practiceForm_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="practiceForm_5.Designer.cs">
+      <DependentUpon>practiceForm_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="practiceForm_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="practiceForm_6.Designer.cs">
+      <DependentUpon>practiceForm_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="practiceForm_7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="practiceForm_7.Designer.cs">
+      <DependentUpon>practiceForm_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="practiceForm_8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="practiceForm_8.Designer.cs">
+      <DependentUpon>practiceForm_8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUpForm.cs">
