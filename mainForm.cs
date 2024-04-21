@@ -179,6 +179,7 @@ namespace DebuggerHandbook
             }
         }
 
+        // Лекции
         private void buttonTheory2_Click(object sender, EventArgs e)
         {
             if (buttonTheory2.BackColor != Color.Gray)
@@ -392,6 +393,7 @@ namespace DebuggerHandbook
             db.closeConnection();
         }
 
+        // Практикумы
         private void buttonPactice1_Click(object sender, EventArgs e)
         {
             if (buttonPactice1.BackColor != Color.Gray)
@@ -411,6 +413,72 @@ namespace DebuggerHandbook
                 practiceForm_1 practiceForm_1 = new practiceForm_1();
                 practiceForm_1.ShowDialog();
             }
+        }
+
+        private void buttonPactice2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPactice3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPactice4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPactice5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPactice6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPactice7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPactice8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // Ссылки
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://visualstudio.microsoft.com/ru/");
+        }
+
+        private void linkLessons_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.youtube.com/watch?v=qut3cTKcFhg");
+        }
+
+        private void linkArticle1_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://learn.microsoft.com/ru-ru/visualstudio/debugger/what-is-debugging?view=vs-2022");
+        }
+
+        private void linkArticle2_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://learn.microsoft.com/ru-ru/visualstudio/debugger/debugger-feature-tour?view=vs-2022");
+        }
+
+        private void linkArticle3_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://learn.microsoft.com/ru-ru/visualstudio/debugger/write-better-code-with-visual-studio?view=vs-2022");
+        }
+
+        private void linkArticle4_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://learn.microsoft.com/ru-ru/visualstudio/debugger/find-your-debugging-task?view=vs-2022");
         }
     }
 }

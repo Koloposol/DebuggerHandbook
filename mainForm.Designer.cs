@@ -65,9 +65,17 @@
             this.buttonPactice2 = new System.Windows.Forms.Button();
             this.buttonPactice1 = new System.Windows.Forms.Button();
             this.groupBoxLinks = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.linkSoft = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.linkLessons = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.linkArticle1 = new System.Windows.Forms.Button();
+            this.linkArticle2 = new System.Windows.Forms.Button();
+            this.linkArticle4 = new System.Windows.Forms.Button();
+            this.linkArticle3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -75,6 +83,9 @@
             this.groupBoxTheoty.SuspendLayout();
             this.groupBoxPractice.SuspendLayout();
             this.groupBoxLinks.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -301,7 +312,7 @@
             this.buttonTheory8.Name = "buttonTheory8";
             this.buttonTheory8.Size = new System.Drawing.Size(232, 37);
             this.buttonTheory8.TabIndex = 16;
-            this.buttonTheory8.Text = "лекция 8";
+            this.buttonTheory8.Text = "Точки останова";
             this.buttonTheory8.UseVisualStyleBackColor = false;
             this.buttonTheory8.Click += new System.EventHandler(this.buttonTheory8_Click);
             // 
@@ -315,7 +326,7 @@
             this.buttonTheory7.Name = "buttonTheory7";
             this.buttonTheory7.Size = new System.Drawing.Size(232, 37);
             this.buttonTheory7.TabIndex = 15;
-            this.buttonTheory7.Text = "лекция 7";
+            this.buttonTheory7.Text = "Отладчик Visual Studio";
             this.buttonTheory7.UseVisualStyleBackColor = false;
             this.buttonTheory7.Click += new System.EventHandler(this.buttonTheory7_Click);
             // 
@@ -329,7 +340,7 @@
             this.buttonTheory6.Name = "buttonTheory6";
             this.buttonTheory6.Size = new System.Drawing.Size(232, 37);
             this.buttonTheory6.TabIndex = 14;
-            this.buttonTheory6.Text = "лекция 6";
+            this.buttonTheory6.Text = "Дизассемблер";
             this.buttonTheory6.UseVisualStyleBackColor = false;
             this.buttonTheory6.Click += new System.EventHandler(this.buttonTheory6_Click);
             // 
@@ -343,7 +354,7 @@
             this.buttonTheory5.Name = "buttonTheory5";
             this.buttonTheory5.Size = new System.Drawing.Size(232, 37);
             this.buttonTheory5.TabIndex = 13;
-            this.buttonTheory5.Text = "лекция 5";
+            this.buttonTheory5.Text = "Профилирование";
             this.buttonTheory5.UseVisualStyleBackColor = false;
             this.buttonTheory5.Click += new System.EventHandler(this.buttonTheory5_Click);
             // 
@@ -357,7 +368,7 @@
             this.buttonTheory4.Name = "buttonTheory4";
             this.buttonTheory4.Size = new System.Drawing.Size(232, 37);
             this.buttonTheory4.TabIndex = 12;
-            this.buttonTheory4.Text = "лекция 4";
+            this.buttonTheory4.Text = "Инструменты отладки";
             this.buttonTheory4.UseVisualStyleBackColor = false;
             this.buttonTheory4.Click += new System.EventHandler(this.buttonTheory4_Click);
             // 
@@ -371,7 +382,7 @@
             this.buttonTheory3.Name = "buttonTheory3";
             this.buttonTheory3.Size = new System.Drawing.Size(232, 37);
             this.buttonTheory3.TabIndex = 11;
-            this.buttonTheory3.Text = "лекция 3";
+            this.buttonTheory3.Text = "Методы отладки";
             this.buttonTheory3.UseVisualStyleBackColor = false;
             this.buttonTheory3.Click += new System.EventHandler(this.buttonTheory3_Click);
             // 
@@ -385,7 +396,7 @@
             this.buttonTheory2.Name = "buttonTheory2";
             this.buttonTheory2.Size = new System.Drawing.Size(232, 37);
             this.buttonTheory2.TabIndex = 10;
-            this.buttonTheory2.Text = "лекция 2";
+            this.buttonTheory2.Text = "Типы ошибок";
             this.buttonTheory2.UseVisualStyleBackColor = false;
             this.buttonTheory2.Click += new System.EventHandler(this.buttonTheory2_Click);
             // 
@@ -433,8 +444,9 @@
             this.buttonPactice8.Name = "buttonPactice8";
             this.buttonPactice8.Size = new System.Drawing.Size(221, 37);
             this.buttonPactice8.TabIndex = 17;
-            this.buttonPactice8.Text = "Практикум 8";
+            this.buttonPactice8.Text = "Практикум №8";
             this.buttonPactice8.UseVisualStyleBackColor = false;
+            this.buttonPactice8.Click += new System.EventHandler(this.buttonPactice8_Click);
             // 
             // buttonPactice7
             // 
@@ -446,8 +458,9 @@
             this.buttonPactice7.Name = "buttonPactice7";
             this.buttonPactice7.Size = new System.Drawing.Size(221, 37);
             this.buttonPactice7.TabIndex = 16;
-            this.buttonPactice7.Text = "Практикум 7";
+            this.buttonPactice7.Text = "Практикум №7";
             this.buttonPactice7.UseVisualStyleBackColor = false;
+            this.buttonPactice7.Click += new System.EventHandler(this.buttonPactice7_Click);
             // 
             // buttonPactice6
             // 
@@ -459,8 +472,9 @@
             this.buttonPactice6.Name = "buttonPactice6";
             this.buttonPactice6.Size = new System.Drawing.Size(221, 37);
             this.buttonPactice6.TabIndex = 15;
-            this.buttonPactice6.Text = "Практикум 6";
+            this.buttonPactice6.Text = "Практикум №6";
             this.buttonPactice6.UseVisualStyleBackColor = false;
+            this.buttonPactice6.Click += new System.EventHandler(this.buttonPactice6_Click);
             // 
             // buttonPactice5
             // 
@@ -472,8 +486,9 @@
             this.buttonPactice5.Name = "buttonPactice5";
             this.buttonPactice5.Size = new System.Drawing.Size(221, 37);
             this.buttonPactice5.TabIndex = 14;
-            this.buttonPactice5.Text = "Практикум 5";
+            this.buttonPactice5.Text = "Практикум №5";
             this.buttonPactice5.UseVisualStyleBackColor = false;
+            this.buttonPactice5.Click += new System.EventHandler(this.buttonPactice5_Click);
             // 
             // buttonPactice4
             // 
@@ -485,8 +500,9 @@
             this.buttonPactice4.Name = "buttonPactice4";
             this.buttonPactice4.Size = new System.Drawing.Size(221, 37);
             this.buttonPactice4.TabIndex = 13;
-            this.buttonPactice4.Text = "Практикум 4";
+            this.buttonPactice4.Text = "Практикум №4";
             this.buttonPactice4.UseVisualStyleBackColor = false;
+            this.buttonPactice4.Click += new System.EventHandler(this.buttonPactice4_Click);
             // 
             // buttonPactice3
             // 
@@ -498,8 +514,9 @@
             this.buttonPactice3.Name = "buttonPactice3";
             this.buttonPactice3.Size = new System.Drawing.Size(221, 37);
             this.buttonPactice3.TabIndex = 12;
-            this.buttonPactice3.Text = "Практикум 3";
+            this.buttonPactice3.Text = "Практикум №3";
             this.buttonPactice3.UseVisualStyleBackColor = false;
+            this.buttonPactice3.Click += new System.EventHandler(this.buttonPactice3_Click);
             // 
             // buttonPactice2
             // 
@@ -511,8 +528,9 @@
             this.buttonPactice2.Name = "buttonPactice2";
             this.buttonPactice2.Size = new System.Drawing.Size(221, 37);
             this.buttonPactice2.TabIndex = 11;
-            this.buttonPactice2.Text = "Практикум 2";
+            this.buttonPactice2.Text = "Практикум №2";
             this.buttonPactice2.UseVisualStyleBackColor = false;
+            this.buttonPactice2.Click += new System.EventHandler(this.buttonPactice2_Click);
             // 
             // buttonPactice1
             // 
@@ -530,7 +548,10 @@
             // 
             // groupBoxLinks
             // 
-            this.groupBoxLinks.Controls.Add(this.button6);
+            this.groupBoxLinks.Controls.Add(this.linkArticle4);
+            this.groupBoxLinks.Controls.Add(this.groupBox5);
+            this.groupBoxLinks.Controls.Add(this.groupBox4);
+            this.groupBoxLinks.Controls.Add(this.groupBox3);
             this.groupBoxLinks.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBoxLinks.Location = new System.Drawing.Point(749, 53);
             this.groupBoxLinks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -541,18 +562,19 @@
             this.groupBoxLinks.TabStop = false;
             this.groupBoxLinks.Text = "Ссылки";
             // 
-            // button6
+            // linkSoft
             // 
-            this.button6.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(6, 57);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(221, 37);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Ссылка 1";
-            this.button6.UseVisualStyleBackColor = false;
+            this.linkSoft.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.linkSoft.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkSoft.ForeColor = System.Drawing.Color.White;
+            this.linkSoft.Location = new System.Drawing.Point(2, 28);
+            this.linkSoft.Margin = new System.Windows.Forms.Padding(4);
+            this.linkSoft.Name = "linkSoft";
+            this.linkSoft.Size = new System.Drawing.Size(221, 37);
+            this.linkSoft.TabIndex = 11;
+            this.linkSoft.Text = "MS Visual Studio 2022";
+            this.linkSoft.UseVisualStyleBackColor = false;
+            this.linkSoft.Click += new System.EventHandler(this.button6_Click);
             // 
             // label11
             // 
@@ -569,6 +591,111 @@
             this.toolTip1.IsBalloon = true;
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "Справка:";
+            // 
+            // linkLessons
+            // 
+            this.linkLessons.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.linkLessons.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLessons.ForeColor = System.Drawing.Color.White;
+            this.linkLessons.Location = new System.Drawing.Point(2, 34);
+            this.linkLessons.Margin = new System.Windows.Forms.Padding(4);
+            this.linkLessons.Name = "linkLessons";
+            this.linkLessons.Size = new System.Drawing.Size(221, 37);
+            this.linkLessons.TabIndex = 12;
+            this.linkLessons.Text = "Отладка программ";
+            this.linkLessons.UseVisualStyleBackColor = false;
+            this.linkLessons.Click += new System.EventHandler(this.linkLessons_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.linkSoft);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox3.Location = new System.Drawing.Point(3, 29);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(227, 85);
+            this.groupBox3.TabIndex = 13;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Software";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.linkLessons);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox4.Location = new System.Drawing.Point(3, 114);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(227, 87);
+            this.groupBox4.TabIndex = 14;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Видеоуроки";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.linkArticle2);
+            this.groupBox5.Controls.Add(this.linkArticle3);
+            this.groupBox5.Controls.Add(this.linkArticle1);
+            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox5.Location = new System.Drawing.Point(3, 201);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(227, 183);
+            this.groupBox5.TabIndex = 15;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Статьи";
+            // 
+            // linkArticle1
+            // 
+            this.linkArticle1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.linkArticle1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkArticle1.ForeColor = System.Drawing.Color.White;
+            this.linkArticle1.Location = new System.Drawing.Point(2, 33);
+            this.linkArticle1.Margin = new System.Windows.Forms.Padding(4);
+            this.linkArticle1.Name = "linkArticle1";
+            this.linkArticle1.Size = new System.Drawing.Size(221, 37);
+            this.linkArticle1.TabIndex = 13;
+            this.linkArticle1.Text = "Что такое отладка?";
+            this.linkArticle1.UseVisualStyleBackColor = false;
+            this.linkArticle1.Click += new System.EventHandler(this.linkArticle1_Click);
+            // 
+            // linkArticle2
+            // 
+            this.linkArticle2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.linkArticle2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkArticle2.ForeColor = System.Drawing.Color.White;
+            this.linkArticle2.Location = new System.Drawing.Point(2, 81);
+            this.linkArticle2.Margin = new System.Windows.Forms.Padding(4);
+            this.linkArticle2.Name = "linkArticle2";
+            this.linkArticle2.Size = new System.Drawing.Size(221, 37);
+            this.linkArticle2.TabIndex = 14;
+            this.linkArticle2.Text = "Работа с отладчиком";
+            this.linkArticle2.UseVisualStyleBackColor = false;
+            this.linkArticle2.Click += new System.EventHandler(this.linkArticle2_Click);
+            // 
+            // linkArticle4
+            // 
+            this.linkArticle4.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.linkArticle4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkArticle4.ForeColor = System.Drawing.Color.White;
+            this.linkArticle4.Location = new System.Drawing.Point(5, 372);
+            this.linkArticle4.Margin = new System.Windows.Forms.Padding(4);
+            this.linkArticle4.Name = "linkArticle4";
+            this.linkArticle4.Size = new System.Drawing.Size(221, 37);
+            this.linkArticle4.TabIndex = 16;
+            this.linkArticle4.Text = "Функций отладчика";
+            this.linkArticle4.UseVisualStyleBackColor = false;
+            this.linkArticle4.Click += new System.EventHandler(this.linkArticle4_Click);
+            // 
+            // linkArticle3
+            // 
+            this.linkArticle3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.linkArticle3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkArticle3.ForeColor = System.Drawing.Color.White;
+            this.linkArticle3.Location = new System.Drawing.Point(2, 126);
+            this.linkArticle3.Margin = new System.Windows.Forms.Padding(4);
+            this.linkArticle3.Name = "linkArticle3";
+            this.linkArticle3.Size = new System.Drawing.Size(221, 37);
+            this.linkArticle3.TabIndex = 15;
+            this.linkArticle3.Text = "Методы отладки";
+            this.linkArticle3.UseVisualStyleBackColor = false;
+            this.linkArticle3.Click += new System.EventHandler(this.linkArticle3_Click);
             // 
             // MainForm
             // 
@@ -600,6 +727,9 @@
             this.groupBoxTheoty.ResumeLayout(false);
             this.groupBoxPractice.ResumeLayout(false);
             this.groupBoxLinks.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -627,7 +757,7 @@
         private System.Windows.Forms.Button buttonProfileSettings;
         private System.Windows.Forms.Button buttonTheory1;
         private System.Windows.Forms.Button buttonPactice1;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button linkSoft;
         public System.Windows.Forms.Label labelName;
         public System.Windows.Forms.Label labelSurname;
         private System.Windows.Forms.Button buttonTheory8;
@@ -645,6 +775,14 @@
         private System.Windows.Forms.Button buttonPactice3;
         private System.Windows.Forms.Button buttonPactice2;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button linkLessons;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button linkArticle4;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button linkArticle2;
+        private System.Windows.Forms.Button linkArticle3;
+        private System.Windows.Forms.Button linkArticle1;
     }
 }
 
