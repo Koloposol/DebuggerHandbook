@@ -220,7 +220,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(989, 75);
+            this.groupBox2.Size = new System.Drawing.Size(1042, 75);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
@@ -230,7 +230,7 @@
             this.label10.Location = new System.Drawing.Point(588, 12);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(245, 55);
+            this.label10.Size = new System.Drawing.Size(293, 55);
             this.label10.TabIndex = 4;
             this.label10.Text = "Приволжский федеральный округ., Самарская область, г.о. Новокуйбышевск, ул. Успен" +
     "ского, 2";
@@ -240,7 +240,7 @@
             this.buttonAbout.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.buttonAbout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAbout.ForeColor = System.Drawing.Color.White;
-            this.buttonAbout.Location = new System.Drawing.Point(843, 23);
+            this.buttonAbout.Location = new System.Drawing.Point(889, 23);
             this.buttonAbout.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAbout.Name = "buttonAbout";
             this.buttonAbout.Size = new System.Drawing.Size(140, 37);
@@ -297,7 +297,7 @@
             this.groupBoxTheoty.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxTheoty.Name = "groupBoxTheoty";
             this.groupBoxTheoty.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxTheoty.Size = new System.Drawing.Size(245, 421);
+            this.groupBoxTheoty.Size = new System.Drawing.Size(267, 421);
             this.groupBoxTheoty.TabIndex = 2;
             this.groupBoxTheoty.TabStop = false;
             this.groupBoxTheoty.Text = "Теоретический модуль";
@@ -310,7 +310,7 @@
             this.buttonTheory8.Location = new System.Drawing.Point(6, 372);
             this.buttonTheory8.Margin = new System.Windows.Forms.Padding(4);
             this.buttonTheory8.Name = "buttonTheory8";
-            this.buttonTheory8.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory8.Size = new System.Drawing.Size(259, 37);
             this.buttonTheory8.TabIndex = 16;
             this.buttonTheory8.Text = "Точки останова";
             this.buttonTheory8.UseVisualStyleBackColor = false;
@@ -324,7 +324,7 @@
             this.buttonTheory7.Location = new System.Drawing.Point(6, 327);
             this.buttonTheory7.Margin = new System.Windows.Forms.Padding(4);
             this.buttonTheory7.Name = "buttonTheory7";
-            this.buttonTheory7.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory7.Size = new System.Drawing.Size(259, 37);
             this.buttonTheory7.TabIndex = 15;
             this.buttonTheory7.Text = "Отладчик Visual Studio";
             this.buttonTheory7.UseVisualStyleBackColor = false;
@@ -338,7 +338,7 @@
             this.buttonTheory6.Location = new System.Drawing.Point(6, 282);
             this.buttonTheory6.Margin = new System.Windows.Forms.Padding(4);
             this.buttonTheory6.Name = "buttonTheory6";
-            this.buttonTheory6.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory6.Size = new System.Drawing.Size(259, 37);
             this.buttonTheory6.TabIndex = 14;
             this.buttonTheory6.Text = "Дизассемблер";
             this.buttonTheory6.UseVisualStyleBackColor = false;
@@ -352,7 +352,7 @@
             this.buttonTheory5.Location = new System.Drawing.Point(6, 237);
             this.buttonTheory5.Margin = new System.Windows.Forms.Padding(4);
             this.buttonTheory5.Name = "buttonTheory5";
-            this.buttonTheory5.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory5.Size = new System.Drawing.Size(259, 37);
             this.buttonTheory5.TabIndex = 13;
             this.buttonTheory5.Text = "Профилирование";
             this.buttonTheory5.UseVisualStyleBackColor = false;
@@ -366,7 +366,7 @@
             this.buttonTheory4.Location = new System.Drawing.Point(7, 192);
             this.buttonTheory4.Margin = new System.Windows.Forms.Padding(4);
             this.buttonTheory4.Name = "buttonTheory4";
-            this.buttonTheory4.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory4.Size = new System.Drawing.Size(259, 37);
             this.buttonTheory4.TabIndex = 12;
             this.buttonTheory4.Text = "Инструменты отладки";
             this.buttonTheory4.UseVisualStyleBackColor = false;
@@ -380,7 +380,7 @@
             this.buttonTheory3.Location = new System.Drawing.Point(7, 147);
             this.buttonTheory3.Margin = new System.Windows.Forms.Padding(4);
             this.buttonTheory3.Name = "buttonTheory3";
-            this.buttonTheory3.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory3.Size = new System.Drawing.Size(259, 37);
             this.buttonTheory3.TabIndex = 11;
             this.buttonTheory3.Text = "Методы отладки";
             this.buttonTheory3.UseVisualStyleBackColor = false;
@@ -394,7 +394,7 @@
             this.buttonTheory2.Location = new System.Drawing.Point(7, 102);
             this.buttonTheory2.Margin = new System.Windows.Forms.Padding(4);
             this.buttonTheory2.Name = "buttonTheory2";
-            this.buttonTheory2.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory2.Size = new System.Drawing.Size(259, 37);
             this.buttonTheory2.TabIndex = 10;
             this.buttonTheory2.Text = "Типы ошибок";
             this.buttonTheory2.UseVisualStyleBackColor = false;
@@ -408,7 +408,7 @@
             this.buttonTheory1.Location = new System.Drawing.Point(7, 57);
             this.buttonTheory1.Margin = new System.Windows.Forms.Padding(4);
             this.buttonTheory1.Name = "buttonTheory1";
-            this.buttonTheory1.Size = new System.Drawing.Size(232, 37);
+            this.buttonTheory1.Size = new System.Drawing.Size(259, 37);
             this.buttonTheory1.TabIndex = 9;
             this.buttonTheory1.Text = "Что такое отладка?";
             this.buttonTheory1.UseVisualStyleBackColor = false;
@@ -425,7 +425,7 @@
             this.groupBoxPractice.Controls.Add(this.buttonPactice2);
             this.groupBoxPractice.Controls.Add(this.buttonPactice1);
             this.groupBoxPractice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBoxPractice.Location = new System.Drawing.Point(507, 53);
+            this.groupBoxPractice.Location = new System.Drawing.Point(528, 53);
             this.groupBoxPractice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxPractice.Name = "groupBoxPractice";
             this.groupBoxPractice.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -553,11 +553,11 @@
             this.groupBoxLinks.Controls.Add(this.groupBox4);
             this.groupBoxLinks.Controls.Add(this.groupBox3);
             this.groupBoxLinks.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBoxLinks.Location = new System.Drawing.Point(749, 53);
+            this.groupBoxLinks.Location = new System.Drawing.Point(770, 53);
             this.groupBoxLinks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxLinks.Name = "groupBoxLinks";
             this.groupBoxLinks.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxLinks.Size = new System.Drawing.Size(233, 421);
+            this.groupBoxLinks.Size = new System.Drawing.Size(260, 421);
             this.groupBoxLinks.TabIndex = 4;
             this.groupBoxLinks.TabStop = false;
             this.groupBoxLinks.Text = "Ссылки";
@@ -570,7 +570,7 @@
             this.linkSoft.Location = new System.Drawing.Point(2, 28);
             this.linkSoft.Margin = new System.Windows.Forms.Padding(4);
             this.linkSoft.Name = "linkSoft";
-            this.linkSoft.Size = new System.Drawing.Size(221, 37);
+            this.linkSoft.Size = new System.Drawing.Size(248, 37);
             this.linkSoft.TabIndex = 11;
             this.linkSoft.Text = "MS Visual Studio 2022";
             this.linkSoft.UseVisualStyleBackColor = false;
@@ -580,7 +580,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(421, 9);
+            this.label11.Location = new System.Drawing.Point(469, 10);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(369, 41);
             this.label11.TabIndex = 5;
@@ -600,7 +600,7 @@
             this.linkLessons.Location = new System.Drawing.Point(2, 34);
             this.linkLessons.Margin = new System.Windows.Forms.Padding(4);
             this.linkLessons.Name = "linkLessons";
-            this.linkLessons.Size = new System.Drawing.Size(221, 37);
+            this.linkLessons.Size = new System.Drawing.Size(248, 37);
             this.linkLessons.TabIndex = 12;
             this.linkLessons.Text = "Отладка программ";
             this.linkLessons.UseVisualStyleBackColor = false;
@@ -612,7 +612,7 @@
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox3.Location = new System.Drawing.Point(3, 29);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(227, 85);
+            this.groupBox3.Size = new System.Drawing.Size(254, 85);
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Software";
@@ -623,7 +623,7 @@
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox4.Location = new System.Drawing.Point(3, 114);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(227, 87);
+            this.groupBox4.Size = new System.Drawing.Size(254, 87);
             this.groupBox4.TabIndex = 14;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Видеоуроки";
@@ -636,7 +636,7 @@
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox5.Location = new System.Drawing.Point(3, 201);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(227, 183);
+            this.groupBox5.Size = new System.Drawing.Size(254, 183);
             this.groupBox5.TabIndex = 15;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Статьи";
@@ -649,7 +649,7 @@
             this.linkArticle1.Location = new System.Drawing.Point(2, 33);
             this.linkArticle1.Margin = new System.Windows.Forms.Padding(4);
             this.linkArticle1.Name = "linkArticle1";
-            this.linkArticle1.Size = new System.Drawing.Size(221, 37);
+            this.linkArticle1.Size = new System.Drawing.Size(248, 37);
             this.linkArticle1.TabIndex = 13;
             this.linkArticle1.Text = "Что такое отладка?";
             this.linkArticle1.UseVisualStyleBackColor = false;
@@ -663,7 +663,7 @@
             this.linkArticle2.Location = new System.Drawing.Point(2, 81);
             this.linkArticle2.Margin = new System.Windows.Forms.Padding(4);
             this.linkArticle2.Name = "linkArticle2";
-            this.linkArticle2.Size = new System.Drawing.Size(221, 37);
+            this.linkArticle2.Size = new System.Drawing.Size(248, 37);
             this.linkArticle2.TabIndex = 14;
             this.linkArticle2.Text = "Работа с отладчиком";
             this.linkArticle2.UseVisualStyleBackColor = false;
@@ -677,7 +677,7 @@
             this.linkArticle4.Location = new System.Drawing.Point(5, 372);
             this.linkArticle4.Margin = new System.Windows.Forms.Padding(4);
             this.linkArticle4.Name = "linkArticle4";
-            this.linkArticle4.Size = new System.Drawing.Size(221, 37);
+            this.linkArticle4.Size = new System.Drawing.Size(248, 37);
             this.linkArticle4.TabIndex = 16;
             this.linkArticle4.Text = "Функций отладчика";
             this.linkArticle4.UseVisualStyleBackColor = false;
@@ -691,7 +691,7 @@
             this.linkArticle3.Location = new System.Drawing.Point(2, 126);
             this.linkArticle3.Margin = new System.Windows.Forms.Padding(4);
             this.linkArticle3.Name = "linkArticle3";
-            this.linkArticle3.Size = new System.Drawing.Size(221, 37);
+            this.linkArticle3.Size = new System.Drawing.Size(248, 37);
             this.linkArticle3.TabIndex = 15;
             this.linkArticle3.Text = "Методы отладки";
             this.linkArticle3.UseVisualStyleBackColor = false;
@@ -702,7 +702,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(989, 554);
+            this.ClientSize = new System.Drawing.Size(1042, 554);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBoxLinks);
             this.Controls.Add(this.groupBoxPractice);
