@@ -399,7 +399,7 @@
             this.buttonTheory1.Name = "buttonTheory1";
             this.buttonTheory1.Size = new System.Drawing.Size(232, 37);
             this.buttonTheory1.TabIndex = 9;
-            this.buttonTheory1.Text = "лекция 1";
+            this.buttonTheory1.Text = "Что такое отладка?";
             this.buttonTheory1.UseVisualStyleBackColor = false;
             this.buttonTheory1.Click += new System.EventHandler(this.buttonTheory1_Click);
             // 
@@ -524,7 +524,7 @@
             this.buttonPactice1.Name = "buttonPactice1";
             this.buttonPactice1.Size = new System.Drawing.Size(221, 37);
             this.buttonPactice1.TabIndex = 10;
-            this.buttonPactice1.Text = "Практикум 1";
+            this.buttonPactice1.Text = "Практикум №1";
             this.buttonPactice1.UseVisualStyleBackColor = false;
             this.buttonPactice1.Click += new System.EventHandler(this.buttonPactice1_Click);
             // 

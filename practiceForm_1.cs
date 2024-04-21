@@ -41,51 +41,48 @@ namespace DebuggerHandbook
 
         private void CalculateResult()
         {
-            //if ( выбран правильный вариант ответа ) totalScore++;
-            //if ( выбран НЕправильный вариант ответа ) totalScore--;
-            if (checkBox2.Checked && checkBox4.Checked) totalScore++;
-            if (checkBox1.Checked || checkBox3.Checked) totalScore--;
-            if (radioButton1.Checked) totalScore++;
-            if (radioButton2.Checked) totalScore++;
-            if (radioButton3.Checked) totalScore++;
-            if (checkBox5.Checked) totalScore++;
-            if (radioButton7.Checked) totalScore++;
+            if (trueAnswer1.Checked) totalScore++;
+            if (trueAnswer2.Checked) totalScore++;
+            if (trueAnswer3.Checked) totalScore++;
         }
 
         private void buttonComplited_Click(object sender, EventArgs e)
         {
             CalculateResult();
             
-            if (totalScore > 3)
+            if (totalScore == 3)
             {
                 DialogResult messageResult = MessageBox.Show(
-                    $"Практический модуль №1 завершен!\nПравильных ответов {totalScore} из 5",
-                    "Ваш результат",
+                    $"Вы ответили верно на все вопросы.\nТак держать!",
+                    "Практикум №1 завершен!",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information,
                     MessageBoxDefaultButton.Button1
                     );
 
                 if (messageResult == DialogResult.OK)
+                {
+                    this.DialogResult = DialogResult.Yes;
                     this.Close();
-
-                //AddResultToDB();
+                }
             }
             else
             {
                 DialogResult messageResult = MessageBox.Show(
-                    $"Правильных ответов {totalScore} из 5\nК сожалению, вы не прошли практический модуль. " +
+                    $"Правильных ответов {totalScore} из 3.\n" +
                     $"Повторите теоретический материал и у вас всё получится!",
-                    "Ваш результат",
+                    "К сожалению, вы не прошли практикум.",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information,
                     MessageBoxDefaultButton.Button1
                     );
 
                 if (messageResult == DialogResult.OK)
+                {
+                    this.DialogResult = DialogResult.No;
                     this.Close();
+                }
             }
         }
-
     }
 }

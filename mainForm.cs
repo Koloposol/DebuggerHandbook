@@ -61,12 +61,6 @@ namespace DebuggerHandbook
             aboutForm.ShowDialog();
         }
 
-        private void buttonPactice1_Click(object sender, EventArgs e)
-        {
-            practiceForm_1 prcticeForm = new practiceForm_1();
-            prcticeForm.ShowDialog();
-        }
-
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             LogInForm logInForm = new LogInForm();
@@ -134,7 +128,7 @@ namespace DebuggerHandbook
         private int theoryProgress;
         private int practiceProgress;
 
-        private void AddResultToDb(int theoryNumber)
+        private void AddTheoryToDb(int theoryNumber)
         {
             string email = userEmail;
 
@@ -169,7 +163,7 @@ namespace DebuggerHandbook
                 viewForm.ShowDialog();
                 if (viewForm.DialogResult == DialogResult.Yes)
                 {
-                    AddResultToDb(1);
+                    AddTheoryToDb(1);
                     LoadUserData(userEmail);
                     buttonTheory1.BackColor = Color.Gray;
                 }
@@ -196,7 +190,7 @@ namespace DebuggerHandbook
                 viewForm.ShowDialog();
                 if (viewForm.DialogResult == DialogResult.Yes)
                 {
-                    AddResultToDb(2);
+                    AddTheoryToDb(2);
                     LoadUserData(userEmail);
                     buttonTheory2.BackColor = Color.Gray;
                 }
@@ -223,7 +217,7 @@ namespace DebuggerHandbook
                 viewForm.ShowDialog();
                 if (viewForm.DialogResult == DialogResult.Yes)
                 {
-                    AddResultToDb(3); //<-
+                    AddTheoryToDb(3); //<-
                     LoadUserData(userEmail);
                     buttonTheory3.BackColor = Color.Gray; //<-
                 }
@@ -250,7 +244,7 @@ namespace DebuggerHandbook
                 viewForm.ShowDialog();
                 if (viewForm.DialogResult == DialogResult.Yes)
                 {
-                    AddResultToDb(4); //<-
+                    AddTheoryToDb(4); //<-
                     LoadUserData(userEmail);
                     buttonTheory4.BackColor = Color.Gray; //<-
                 }
@@ -277,7 +271,7 @@ namespace DebuggerHandbook
                 viewForm.ShowDialog();
                 if (viewForm.DialogResult == DialogResult.Yes)
                 {
-                    AddResultToDb(5); //<-
+                    AddTheoryToDb(5); //<-
                     LoadUserData(userEmail);
                     buttonTheory5.BackColor = Color.Gray; //<-
                 }
@@ -304,7 +298,7 @@ namespace DebuggerHandbook
                 viewForm.ShowDialog();
                 if (viewForm.DialogResult == DialogResult.Yes)
                 {
-                    AddResultToDb(6); //<-
+                    AddTheoryToDb(6); //<-
                     LoadUserData(userEmail);
                     buttonTheory6.BackColor = Color.Gray; //<-
                 }
@@ -331,7 +325,7 @@ namespace DebuggerHandbook
                 viewForm.ShowDialog();
                 if (viewForm.DialogResult == DialogResult.Yes)
                 {
-                    AddResultToDb(7); //<-
+                    AddTheoryToDb(7); //<-
                     LoadUserData(userEmail);
                     buttonTheory7.BackColor = Color.Gray; //<-
                 }
@@ -358,7 +352,7 @@ namespace DebuggerHandbook
                 viewForm.ShowDialog();
                 if (viewForm.DialogResult == DialogResult.Yes)
                 {
-                    AddResultToDb(8); //<-
+                    AddTheoryToDb(8); //<-
                     LoadUserData(userEmail);
                     buttonTheory8.BackColor = Color.Gray; //<-
                 }
@@ -371,6 +365,51 @@ namespace DebuggerHandbook
                 viewForm.buttonReaded.Visible = false;
 
                 viewForm.ShowDialog();
+            }
+        }
+
+        private void AddPracticeToDb(int practiceNumber)
+        {
+            string email = userEmail;
+
+            int result = Convert.ToInt32(labelPractice.Text) + 1;
+            string progressString = practiceProgress.ToString() + practiceNumber.ToString();
+            int _progress = Convert.ToInt32(progressString);
+
+            DataBase db = new DataBase();
+
+            string query = $"UPDATE users_db " +
+                    $"SET practice_count = {result}, practice_progress = {_progress} " +
+                    $"WHERE email = '{email}'";
+
+            SqlCommand sqlCommand = new SqlCommand(query, db.GetConnection());
+
+            db.openConnection();
+
+            if (sqlCommand.ExecuteNonQuery() == 1)
+                Thread.Sleep(100);
+
+            db.closeConnection();
+        }
+
+        private void buttonPactice1_Click(object sender, EventArgs e)
+        {
+            if (buttonPactice1.BackColor != Color.Gray)
+            {
+                practiceForm_1 practiceForm_1 = new practiceForm_1();
+                practiceForm_1.ShowDialog();
+
+                if (practiceForm_1.DialogResult == DialogResult.Yes)
+                {
+                    AddPracticeToDb(1);
+                    LoadUserData(userEmail);
+                    buttonPactice1.BackColor = Color.Gray;
+                }
+            }
+            else
+            {
+                practiceForm_1 practiceForm_1 = new practiceForm_1();
+                practiceForm_1.ShowDialog();
             }
         }
     }

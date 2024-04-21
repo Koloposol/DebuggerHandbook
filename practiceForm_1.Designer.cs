@@ -31,52 +31,32 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(practiceForm_1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.task3 = new System.Windows.Forms.GroupBox();
+            this.falseAnswer3 = new System.Windows.Forms.RadioButton();
+            this.trueAnswer3 = new System.Windows.Forms.RadioButton();
+            this.task2 = new System.Windows.Forms.GroupBox();
+            this.falseAnswer2 = new System.Windows.Forms.RadioButton();
+            this.trueAnswer2 = new System.Windows.Forms.RadioButton();
+            this.task1 = new System.Windows.Forms.GroupBox();
+            this.trueAnswer1 = new System.Windows.Forms.RadioButton();
+            this.falseAnswer1 = new System.Windows.Forms.RadioButton();
             this.backButton = new System.Windows.Forms.Button();
             this.buttonComplited = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.task3.SuspendLayout();
+            this.task2.SuspendLayout();
+            this.task1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.groupBox5);
-            this.panel1.Controls.Add(this.groupBox4);
-            this.panel1.Controls.Add(this.groupBox3);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.task3);
+            this.panel1.Controls.Add(this.task2);
+            this.panel1.Controls.Add(this.task1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -84,286 +64,132 @@
             this.panel1.Size = new System.Drawing.Size(1101, 482);
             this.panel1.TabIndex = 0;
             // 
-            // groupBox5
+            // task3
             // 
-            this.groupBox5.Controls.Add(this.radioButton6);
-            this.groupBox5.Controls.Add(this.radioButton7);
-            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
-            this.groupBox5.Location = new System.Drawing.Point(0, 750);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox5.Size = new System.Drawing.Size(1080, 208);
-            this.groupBox5.TabIndex = 4;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "5. Верно ли следующее высказывание: «Точка останова — это расположение в исполняе" +
-    "мом коде, в котором операционная система останавливает выполнение и прерывает ра" +
-    "боту отладчика»";
+            this.task3.Controls.Add(this.falseAnswer3);
+            this.task3.Controls.Add(this.trueAnswer3);
+            this.task3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.task3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.task3.Location = new System.Drawing.Point(0, 349);
+            this.task3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.task3.Name = "task3";
+            this.task3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.task3.Size = new System.Drawing.Size(1080, 178);
+            this.task3.TabIndex = 2;
+            this.task3.TabStop = false;
+            this.task3.Text = "3. Верно ли следующее высказывание: «Первый шаг в отладке - понимание проблемы и " +
+    "ее возможных причин».";
             // 
-            // radioButton6
+            // falseAnswer3
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton6.Location = new System.Drawing.Point(12, 146);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(127, 35);
-            this.radioButton6.TabIndex = 3;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Неверно";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.falseAnswer3.AutoSize = true;
+            this.falseAnswer3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.falseAnswer3.Location = new System.Drawing.Point(13, 112);
+            this.falseAnswer3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.falseAnswer3.Name = "falseAnswer3";
+            this.falseAnswer3.Size = new System.Drawing.Size(127, 35);
+            this.falseAnswer3.TabIndex = 5;
+            this.falseAnswer3.TabStop = true;
+            this.falseAnswer3.Text = "Неверно";
+            this.falseAnswer3.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // trueAnswer3
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton7.Location = new System.Drawing.Point(13, 106);
-            this.radioButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(100, 35);
-            this.radioButton7.TabIndex = 2;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Верно";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.trueAnswer3.AutoSize = true;
+            this.trueAnswer3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.trueAnswer3.Location = new System.Drawing.Point(13, 71);
+            this.trueAnswer3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.trueAnswer3.Name = "trueAnswer3";
+            this.trueAnswer3.Size = new System.Drawing.Size(100, 35);
+            this.trueAnswer3.TabIndex = 4;
+            this.trueAnswer3.TabStop = true;
+            this.trueAnswer3.Text = "Верно";
+            this.trueAnswer3.UseVisualStyleBackColor = true;
             // 
-            // groupBox4
+            // task2
             // 
-            this.groupBox4.Controls.Add(this.checkBox7);
-            this.groupBox4.Controls.Add(this.checkBox6);
-            this.groupBox4.Controls.Add(this.checkBox5);
-            this.groupBox4.Controls.Add(this.pictureBox3);
-            this.groupBox4.Controls.Add(this.pictureBox2);
-            this.groupBox4.Controls.Add(this.pictureBox1);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
-            this.groupBox4.Location = new System.Drawing.Point(0, 519);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(1080, 231);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "4. Выберите языки программирования";
+            this.task2.Controls.Add(this.falseAnswer2);
+            this.task2.Controls.Add(this.trueAnswer2);
+            this.task2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.task2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.task2.Location = new System.Drawing.Point(0, 158);
+            this.task2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.task2.Name = "task2";
+            this.task2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.task2.Size = new System.Drawing.Size(1080, 191);
+            this.task2.TabIndex = 1;
+            this.task2.TabStop = false;
+            this.task2.Text = "2. Верно ли следующее высказывание: «Брейкпоинты и точки останова позволяют остан" +
+    "овить выполнение программы на определенной строке кода и проверить значения пере" +
+    "менных или состояние стека вызовов» ";
             // 
-            // checkBox7
+            // falseAnswer2
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(632, 198);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(18, 17);
-            this.checkBox7.TabIndex = 5;
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.falseAnswer2.AutoSize = true;
+            this.falseAnswer2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.falseAnswer2.Location = new System.Drawing.Point(13, 139);
+            this.falseAnswer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.falseAnswer2.Name = "falseAnswer2";
+            this.falseAnswer2.Size = new System.Drawing.Size(127, 35);
+            this.falseAnswer2.TabIndex = 3;
+            this.falseAnswer2.TabStop = true;
+            this.falseAnswer2.Text = "Неверно";
+            this.falseAnswer2.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // trueAnswer2
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(369, 198);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(18, 17);
-            this.checkBox6.TabIndex = 4;
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.trueAnswer2.AutoSize = true;
+            this.trueAnswer2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.trueAnswer2.Location = new System.Drawing.Point(13, 98);
+            this.trueAnswer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.trueAnswer2.Name = "trueAnswer2";
+            this.trueAnswer2.Size = new System.Drawing.Size(100, 35);
+            this.trueAnswer2.TabIndex = 2;
+            this.trueAnswer2.TabStop = true;
+            this.trueAnswer2.Text = "Верно";
+            this.trueAnswer2.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // task1
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(104, 198);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(18, 17);
-            this.checkBox5.TabIndex = 3;
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.task1.Controls.Add(this.trueAnswer1);
+            this.task1.Controls.Add(this.falseAnswer1);
+            this.task1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.task1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.task1.Location = new System.Drawing.Point(0, 0);
+            this.task1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.task1.Name = "task1";
+            this.task1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.task1.Size = new System.Drawing.Size(1080, 158);
+            this.task1.TabIndex = 0;
+            this.task1.TabStop = false;
+            this.task1.Text = "Верно ли следующее высказывание: «Отладчики - это инструменты, которые позволяют " +
+    "в режиме реального времени исправлять программу автоматически». ";
             // 
-            // pictureBox3
+            // trueAnswer1
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(559, 37);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(155, 155);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.trueAnswer1.AutoSize = true;
+            this.trueAnswer1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.trueAnswer1.Location = new System.Drawing.Point(13, 110);
+            this.trueAnswer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.trueAnswer1.Name = "trueAnswer1";
+            this.trueAnswer1.Size = new System.Drawing.Size(127, 35);
+            this.trueAnswer1.TabIndex = 1;
+            this.trueAnswer1.TabStop = true;
+            this.trueAnswer1.Text = "Неверно";
+            this.trueAnswer1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // falseAnswer1
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(299, 37);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(155, 155);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(37, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 155);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.radioButton5);
-            this.groupBox3.Controls.Add(this.radioButton4);
-            this.groupBox3.Controls.Add(this.radioButton3);
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
-            this.groupBox3.Location = new System.Drawing.Point(0, 357);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(1080, 162);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "3. Одним из первых шагов в отладке является...";
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton5.Location = new System.Drawing.Point(13, 119);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(529, 35);
-            this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "понимание проблемы и ее возможных причин";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton4.Location = new System.Drawing.Point(13, 78);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(532, 35);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Понимание проблемы и ее возможных причин";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton3.Location = new System.Drawing.Point(13, 37);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(517, 35);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Исправление всех ошибок в коде программы";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.checkBox4);
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
-            this.groupBox2.Location = new System.Drawing.Point(0, 158);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(1080, 199);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "2. Выберите языки программирования";
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox4.Location = new System.Drawing.Point(13, 159);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(155, 35);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Visual Basic";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox3.Location = new System.Drawing.Point(13, 119);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(161, 35);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Hearthstone";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox2.Location = new System.Drawing.Point(13, 78);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(82, 35);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "С++";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox1.Location = new System.Drawing.Point(13, 37);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(76, 35);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "С№";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1080, 158);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "1. Верно ли следующее высказывание: «Отладчики - это инструменты, которые позволя" +
-    "ют в режиме реального времени исправлять программу автоматически»";
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton2.Location = new System.Drawing.Point(13, 110);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(72, 35);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Нет";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton1.Location = new System.Drawing.Point(13, 69);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(63, 35);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Да";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.falseAnswer1.AutoSize = true;
+            this.falseAnswer1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.falseAnswer1.Location = new System.Drawing.Point(13, 69);
+            this.falseAnswer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.falseAnswer1.Name = "falseAnswer1";
+            this.falseAnswer1.Size = new System.Drawing.Size(100, 35);
+            this.falseAnswer1.TabIndex = 0;
+            this.falseAnswer1.TabStop = true;
+            this.falseAnswer1.Text = "Верно";
+            this.falseAnswer1.UseVisualStyleBackColor = true;
             // 
             // backButton
             // 
@@ -427,22 +253,15 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "practiceForm_1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Практический модуль №1";
+            this.Text = "Практикум №1";
             this.Load += new System.EventHandler(this.practiceForm_1_Load);
             this.panel1.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.task3.ResumeLayout(false);
+            this.task3.PerformLayout();
+            this.task2.ResumeLayout(false);
+            this.task2.PerformLayout();
+            this.task1.ResumeLayout(false);
+            this.task1.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -452,30 +271,17 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button backButton;
-        private System.Windows.Forms.Button buttonComplited;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.GroupBox task3;
+        private System.Windows.Forms.GroupBox task2;
+        private System.Windows.Forms.GroupBox task1;
+        private System.Windows.Forms.RadioButton trueAnswer1;
+        private System.Windows.Forms.RadioButton falseAnswer1;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.RadioButton falseAnswer3;
+        private System.Windows.Forms.RadioButton trueAnswer3;
+        private System.Windows.Forms.RadioButton falseAnswer2;
+        private System.Windows.Forms.RadioButton trueAnswer2;
+        public System.Windows.Forms.Button buttonComplited;
     }
 }
