@@ -396,58 +396,170 @@ namespace DebuggerHandbook
         // Практикумы
         private void buttonPactice1_Click(object sender, EventArgs e)
         {
-            if (buttonPactice1.BackColor != Color.Gray)
+            if (buttonPactice1.BackColor != Color.Gray) //
             {
-                practiceForm_1 practiceForm_1 = new practiceForm_1();
-                practiceForm_1.ShowDialog();
+                practiceForm_1 practiceForm_1 = new practiceForm_1(); //
+                practiceForm_1.ShowDialog(); //
 
-                if (practiceForm_1.DialogResult == DialogResult.Yes)
+                if (practiceForm_1.DialogResult == DialogResult.Yes) //
                 {
-                    AddPracticeToDb(1);
+                    AddPracticeToDb(1); //
                     LoadUserData(userEmail);
-                    buttonPactice1.BackColor = Color.Gray;
+                    buttonPactice1.BackColor = Color.Gray; //
                 }
             }
             else
             {
-                practiceForm_1 practiceForm_1 = new practiceForm_1();
-                practiceForm_1.ShowDialog();
+                practiceForm_1 practiceForm_1 = new practiceForm_1(); //
+                practiceForm_1.ShowDialog(); //
             }
         }
 
         private void buttonPactice2_Click(object sender, EventArgs e)
         {
+            if (buttonPactice2.BackColor != Color.Gray) //
+            {
+                practiceForm_2 practiceForm_2 = new practiceForm_2(); //
+                practiceForm_2.ShowDialog(); //
 
+                if (practiceForm_2.DialogResult == DialogResult.Yes) //
+                {
+                    AddPracticeToDb(2); //
+                    LoadUserData(userEmail);
+                    buttonPactice2.BackColor = Color.Gray; //
+                }
+            }
+            else
+            {
+                practiceForm_2 practiceForm_2 = new practiceForm_2(); //
+                practiceForm_2.ShowDialog(); //
+            }
         }
 
         private void buttonPactice3_Click(object sender, EventArgs e)
         {
+            if (buttonPactice3.BackColor != Color.Gray) //
+            {
+                practiceForm_3 practiceForm_3 = new practiceForm_3(); //
+                practiceForm_3.ShowDialog(); //
 
+                if (practiceForm_3.DialogResult == DialogResult.Yes) //
+                {
+                    AddPracticeToDb(3); //
+                    LoadUserData(userEmail);
+                    buttonPactice3.BackColor = Color.Gray; //
+                }
+            }
+            else
+            {
+                practiceForm_3 practiceForm_3 = new practiceForm_3(); //
+                practiceForm_3.ShowDialog(); //
+            }
         }
 
         private void buttonPactice4_Click(object sender, EventArgs e)
         {
+            if (buttonPactice4.BackColor != Color.Gray) //
+            {
+                practiceForm_4 practiceForm_4 = new practiceForm_4(); //
+                practiceForm_4.ShowDialog(); //
 
+                if (practiceForm_4.DialogResult == DialogResult.Yes) //
+                {
+                    AddPracticeToDb(4); //
+                    LoadUserData(userEmail);
+                    buttonPactice4.BackColor = Color.Gray; //
+                }
+            }
+            else
+            {
+                practiceForm_4 practiceForm_4 = new practiceForm_4(); //
+                practiceForm_4.ShowDialog(); //
+            }
         }
 
         private void buttonPactice5_Click(object sender, EventArgs e)
         {
+            if (buttonPactice5.BackColor != Color.Gray) //
+            {
+                practiceForm_5 practiceForm_5 = new practiceForm_5(); //
+                practiceForm_5.ShowDialog(); //
 
+                if (practiceForm_5.DialogResult == DialogResult.Yes) //
+                {
+                    AddPracticeToDb(5); //
+                    LoadUserData(userEmail);
+                    buttonPactice5.BackColor = Color.Gray; //
+                }
+            }
+            else
+            {
+                practiceForm_5 practiceForm_5 = new practiceForm_5(); //
+                practiceForm_5.ShowDialog(); //
+            }
         }
 
         private void buttonPactice6_Click(object sender, EventArgs e)
         {
+            if (buttonPactice6.BackColor != Color.Gray) //
+            {
+                practiceForm_6 practiceForm_6 = new practiceForm_6(); //
+                practiceForm_6.ShowDialog(); //
 
+                if (practiceForm_6.DialogResult == DialogResult.Yes) //
+                {
+                    AddPracticeToDb(6); //
+                    LoadUserData(userEmail);
+                    buttonPactice6.BackColor = Color.Gray; //
+                }
+            }
+            else
+            {
+                practiceForm_6 practiceForm_6 = new practiceForm_6(); //
+                practiceForm_6.ShowDialog(); //
+            }
         }
 
         private void buttonPactice7_Click(object sender, EventArgs e)
         {
+            if (buttonPactice7.BackColor != Color.Gray) //
+            {
+                practiceForm_7 practiceForm_7 = new practiceForm_7(); //
+                practiceForm_7.ShowDialog(); //
 
+                if (practiceForm_7.DialogResult == DialogResult.Yes) //
+                {
+                    AddPracticeToDb(7); //
+                    LoadUserData(userEmail);
+                    buttonPactice7.BackColor = Color.Gray; //
+                }
+            }
+            else
+            {
+                practiceForm_7 practiceForm_7 = new practiceForm_7(); //
+                practiceForm_7.ShowDialog(); //
+            }
         }
 
         private void buttonPactice8_Click(object sender, EventArgs e)
         {
+            if (buttonPactice8.BackColor != Color.Gray) //
+            {
+                practiceForm_8 practiceForm_8 = new practiceForm_8(); //
+                practiceForm_8.ShowDialog(); //
 
+                if (practiceForm_8.DialogResult == DialogResult.Yes) //
+                {
+                    AddPracticeToDb(8); //
+                    LoadUserData(userEmail);
+                    buttonPactice8.BackColor = Color.Gray; //
+                }
+            }
+            else
+            {
+                practiceForm_8 practiceForm_8 = new practiceForm_8(); //
+                practiceForm_8.ShowDialog(); //
+            }
         }
 
         // Ссылки
