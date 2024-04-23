@@ -65,17 +65,17 @@
             this.buttonPactice2 = new System.Windows.Forms.Button();
             this.buttonPactice1 = new System.Windows.Forms.Button();
             this.groupBoxLinks = new System.Windows.Forms.GroupBox();
+            this.linkArticle4 = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.linkArticle2 = new System.Windows.Forms.Button();
+            this.linkArticle3 = new System.Windows.Forms.Button();
+            this.linkArticle1 = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.linkLessons = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.linkSoft = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.linkLessons = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.linkArticle1 = new System.Windows.Forms.Button();
-            this.linkArticle2 = new System.Windows.Forms.Button();
-            this.linkArticle4 = new System.Windows.Forms.Button();
-            this.linkArticle3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -83,9 +83,9 @@
             this.groupBoxTheoty.SuspendLayout();
             this.groupBoxPractice.SuspendLayout();
             this.groupBoxLinks.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -562,6 +562,111 @@
             this.groupBoxLinks.TabStop = false;
             this.groupBoxLinks.Text = "Ссылки";
             // 
+            // linkArticle4
+            // 
+            this.linkArticle4.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.linkArticle4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkArticle4.ForeColor = System.Drawing.Color.White;
+            this.linkArticle4.Location = new System.Drawing.Point(5, 372);
+            this.linkArticle4.Margin = new System.Windows.Forms.Padding(4);
+            this.linkArticle4.Name = "linkArticle4";
+            this.linkArticle4.Size = new System.Drawing.Size(248, 37);
+            this.linkArticle4.TabIndex = 16;
+            this.linkArticle4.Text = "Функций отладчика";
+            this.linkArticle4.UseVisualStyleBackColor = false;
+            this.linkArticle4.Click += new System.EventHandler(this.linkArticle4_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.linkArticle2);
+            this.groupBox5.Controls.Add(this.linkArticle3);
+            this.groupBox5.Controls.Add(this.linkArticle1);
+            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox5.Location = new System.Drawing.Point(3, 201);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(254, 183);
+            this.groupBox5.TabIndex = 15;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Статьи";
+            // 
+            // linkArticle2
+            // 
+            this.linkArticle2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.linkArticle2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkArticle2.ForeColor = System.Drawing.Color.White;
+            this.linkArticle2.Location = new System.Drawing.Point(2, 81);
+            this.linkArticle2.Margin = new System.Windows.Forms.Padding(4);
+            this.linkArticle2.Name = "linkArticle2";
+            this.linkArticle2.Size = new System.Drawing.Size(248, 37);
+            this.linkArticle2.TabIndex = 14;
+            this.linkArticle2.Text = "Работа с отладчиком";
+            this.linkArticle2.UseVisualStyleBackColor = false;
+            this.linkArticle2.Click += new System.EventHandler(this.linkArticle2_Click);
+            // 
+            // linkArticle3
+            // 
+            this.linkArticle3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.linkArticle3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkArticle3.ForeColor = System.Drawing.Color.White;
+            this.linkArticle3.Location = new System.Drawing.Point(2, 126);
+            this.linkArticle3.Margin = new System.Windows.Forms.Padding(4);
+            this.linkArticle3.Name = "linkArticle3";
+            this.linkArticle3.Size = new System.Drawing.Size(248, 37);
+            this.linkArticle3.TabIndex = 15;
+            this.linkArticle3.Text = "Методы отладки";
+            this.linkArticle3.UseVisualStyleBackColor = false;
+            this.linkArticle3.Click += new System.EventHandler(this.linkArticle3_Click);
+            // 
+            // linkArticle1
+            // 
+            this.linkArticle1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.linkArticle1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkArticle1.ForeColor = System.Drawing.Color.White;
+            this.linkArticle1.Location = new System.Drawing.Point(2, 33);
+            this.linkArticle1.Margin = new System.Windows.Forms.Padding(4);
+            this.linkArticle1.Name = "linkArticle1";
+            this.linkArticle1.Size = new System.Drawing.Size(248, 37);
+            this.linkArticle1.TabIndex = 13;
+            this.linkArticle1.Text = "Что такое отладка?";
+            this.linkArticle1.UseVisualStyleBackColor = false;
+            this.linkArticle1.Click += new System.EventHandler(this.linkArticle1_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.linkLessons);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox4.Location = new System.Drawing.Point(3, 114);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(254, 87);
+            this.groupBox4.TabIndex = 14;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Видеоуроки";
+            // 
+            // linkLessons
+            // 
+            this.linkLessons.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.linkLessons.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLessons.ForeColor = System.Drawing.Color.White;
+            this.linkLessons.Location = new System.Drawing.Point(2, 34);
+            this.linkLessons.Margin = new System.Windows.Forms.Padding(4);
+            this.linkLessons.Name = "linkLessons";
+            this.linkLessons.Size = new System.Drawing.Size(248, 37);
+            this.linkLessons.TabIndex = 12;
+            this.linkLessons.Text = "Отладка программ";
+            this.linkLessons.UseVisualStyleBackColor = false;
+            this.linkLessons.Click += new System.EventHandler(this.linkLessons_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.linkSoft);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox3.Location = new System.Drawing.Point(3, 29);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(254, 85);
+            this.groupBox3.TabIndex = 13;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Software";
+            // 
             // linkSoft
             // 
             this.linkSoft.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -592,111 +697,6 @@
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "Справка:";
             // 
-            // linkLessons
-            // 
-            this.linkLessons.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.linkLessons.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLessons.ForeColor = System.Drawing.Color.White;
-            this.linkLessons.Location = new System.Drawing.Point(2, 34);
-            this.linkLessons.Margin = new System.Windows.Forms.Padding(4);
-            this.linkLessons.Name = "linkLessons";
-            this.linkLessons.Size = new System.Drawing.Size(248, 37);
-            this.linkLessons.TabIndex = 12;
-            this.linkLessons.Text = "Отладка программ";
-            this.linkLessons.UseVisualStyleBackColor = false;
-            this.linkLessons.Click += new System.EventHandler(this.linkLessons_Click);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.linkSoft);
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox3.Location = new System.Drawing.Point(3, 29);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(254, 85);
-            this.groupBox3.TabIndex = 13;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Software";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.linkLessons);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox4.Location = new System.Drawing.Point(3, 114);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(254, 87);
-            this.groupBox4.TabIndex = 14;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Видеоуроки";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.linkArticle2);
-            this.groupBox5.Controls.Add(this.linkArticle3);
-            this.groupBox5.Controls.Add(this.linkArticle1);
-            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox5.Location = new System.Drawing.Point(3, 201);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(254, 183);
-            this.groupBox5.TabIndex = 15;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Статьи";
-            // 
-            // linkArticle1
-            // 
-            this.linkArticle1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.linkArticle1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkArticle1.ForeColor = System.Drawing.Color.White;
-            this.linkArticle1.Location = new System.Drawing.Point(2, 33);
-            this.linkArticle1.Margin = new System.Windows.Forms.Padding(4);
-            this.linkArticle1.Name = "linkArticle1";
-            this.linkArticle1.Size = new System.Drawing.Size(248, 37);
-            this.linkArticle1.TabIndex = 13;
-            this.linkArticle1.Text = "Что такое отладка?";
-            this.linkArticle1.UseVisualStyleBackColor = false;
-            this.linkArticle1.Click += new System.EventHandler(this.linkArticle1_Click);
-            // 
-            // linkArticle2
-            // 
-            this.linkArticle2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.linkArticle2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkArticle2.ForeColor = System.Drawing.Color.White;
-            this.linkArticle2.Location = new System.Drawing.Point(2, 81);
-            this.linkArticle2.Margin = new System.Windows.Forms.Padding(4);
-            this.linkArticle2.Name = "linkArticle2";
-            this.linkArticle2.Size = new System.Drawing.Size(248, 37);
-            this.linkArticle2.TabIndex = 14;
-            this.linkArticle2.Text = "Работа с отладчиком";
-            this.linkArticle2.UseVisualStyleBackColor = false;
-            this.linkArticle2.Click += new System.EventHandler(this.linkArticle2_Click);
-            // 
-            // linkArticle4
-            // 
-            this.linkArticle4.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.linkArticle4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkArticle4.ForeColor = System.Drawing.Color.White;
-            this.linkArticle4.Location = new System.Drawing.Point(5, 372);
-            this.linkArticle4.Margin = new System.Windows.Forms.Padding(4);
-            this.linkArticle4.Name = "linkArticle4";
-            this.linkArticle4.Size = new System.Drawing.Size(248, 37);
-            this.linkArticle4.TabIndex = 16;
-            this.linkArticle4.Text = "Функций отладчика";
-            this.linkArticle4.UseVisualStyleBackColor = false;
-            this.linkArticle4.Click += new System.EventHandler(this.linkArticle4_Click);
-            // 
-            // linkArticle3
-            // 
-            this.linkArticle3.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.linkArticle3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkArticle3.ForeColor = System.Drawing.Color.White;
-            this.linkArticle3.Location = new System.Drawing.Point(2, 126);
-            this.linkArticle3.Margin = new System.Windows.Forms.Padding(4);
-            this.linkArticle3.Name = "linkArticle3";
-            this.linkArticle3.Size = new System.Drawing.Size(248, 37);
-            this.linkArticle3.TabIndex = 15;
-            this.linkArticle3.Text = "Методы отладки";
-            this.linkArticle3.UseVisualStyleBackColor = false;
-            this.linkArticle3.Click += new System.EventHandler(this.linkArticle3_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -718,6 +718,7 @@
             this.Text = "База знаний «Отладчик»";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -727,9 +728,9 @@
             this.groupBoxTheoty.ResumeLayout(false);
             this.groupBoxPractice.ResumeLayout(false);
             this.groupBoxLinks.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

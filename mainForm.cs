@@ -44,10 +44,16 @@ namespace DebuggerHandbook
         {
             LoadUserData(userEmail);
             CheckProgress();
+
             toolTip1.SetToolTip(buttonProfileSettings, "Изменить данные профиля.");
             toolTip1.SetToolTip(buttonLogOut, "Выйти из текущего профиля.");
             toolTip1.SetToolTip(buttonAbout, "Посмотреть информацию о программе.");
             toolTip1.SetToolTip(buttonWebsite, "Перейти на сайт колледжа.");
+        }
+
+        private void MainForm_Shown(object sender, EventArgs e)
+        {
+            HasCourseCompleted();
         }
 
         private void buttonWebsite_MouseClick(object sender, MouseEventArgs e)
@@ -91,6 +97,20 @@ namespace DebuggerHandbook
             userProfileSettings.ShowDialog();
             if (userProfileSettings.DialogResult == DialogResult.OK)
                 this.Close();
+        }
+
+        public void HasCourseCompleted()
+        {
+            if (labelTheory.Text == "8" && labelPractice.Text == "8")
+            {
+                DialogResult message = MessageBox.Show(
+                "Вы прочли все лекции и успешно прошли все практикумы!\nТеперь вы обладаете фундаментальными знаниями в области отладки программного обеспечения.",
+                "Поздравляем вас с прохождением курса \"Основы отладки\"!",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information,
+                MessageBoxDefaultButton.Button2
+                );
+            }
         }
 
         private void LoadUserData(string email)
