@@ -178,6 +178,9 @@
     <EmbeddedResource Include="practiceForm_7.resx">
       <DependentUpon>practiceForm_7.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="practiceForm_8.resx">
+      <DependentUpon>practiceForm_8.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
