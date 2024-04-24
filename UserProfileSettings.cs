@@ -9,7 +9,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace DebuggerHandbook
@@ -86,7 +88,6 @@ namespace DebuggerHandbook
                 if (sqlCommand.ExecuteNonQuery() == 1)
                 {
                     MessageBox.Show("Учетная запись успешно изменена!\nНеобходима повторная авторизация", "Изменение завершено!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                     this.Close();
                 }
                 else
@@ -103,5 +104,43 @@ namespace DebuggerHandbook
             }
         }
 
+        private void ResetProgress()
+        {
+            DataBase db = new DataBase();
+
+            int id = userId;
+
+            string query = $"UPDATE users_db " +
+            $"SET theory_count = 0, practice_count = 0, theory_progress = 0, practice_progress = 0" +
+            $"WHERE id = {id}";
+
+            SqlCommand sqlCommand = new SqlCommand(query, db.GetConnection());
+
+            db.openConnection();
+
+            if (sqlCommand.ExecuteNonQuery()==1)
+            {
+                MessageBox.Show("Прогресс учетной записи удален!", "Удаление завершено!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+
+            db.closeConnection();
+        }
+
+        private void buttonResetProgress_Click(object sender, EventArgs e)
+        {
+            DialogResult warning = MessageBox.Show
+                (
+                    "При нажатий кнопки \"Да\" весь ваш прогресс будет удален!\n" +
+                    "Вы уверены, что хотите сбросить прогресс?",
+                    "Сброс прогресса",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning,
+                    MessageBoxDefaultButton.Button2
+                );
+
+            if (warning == DialogResult.Yes)
+                ResetProgress();
+        }
     }
 }

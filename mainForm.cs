@@ -31,12 +31,16 @@ namespace DebuggerHandbook
             {
                 if (theoryProgress.ToString().Contains(button.Name.Substring(button.Name.Length - 1)))
                     button.BackColor = Color.Gray;
+                else
+                    button.BackColor = Color.DeepSkyBlue;
             }
 
             foreach (var button in this.groupBoxPractice.Controls.OfType<Button>())
             {
                 if (practiceProgress.ToString().Contains(button.Name.Substring(button.Name.Length - 1)))
                     button.BackColor = Color.Gray;
+                else
+                    button.BackColor = Color.DeepSkyBlue;
             }
         }
 
@@ -75,9 +79,6 @@ namespace DebuggerHandbook
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
-            LogInForm logInForm = new LogInForm();
-            logInForm.Show();
-
             this.Close();
         }
 
@@ -97,6 +98,9 @@ namespace DebuggerHandbook
             userProfileSettings.ShowDialog();
             if (userProfileSettings.DialogResult == DialogResult.OK)
                 this.Close();
+
+            LoadUserData(userEmail);
+            CheckProgress();
         }
 
         public void HasCourseCompleted()
