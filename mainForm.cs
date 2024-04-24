@@ -143,6 +143,9 @@ namespace DebuggerHandbook
                 MessageBox.Show("Неудалось считать данные пользователя!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             reader.Close();
+            db.closeConnection();
+
+            HasCourseCompleted();
         }
 
         private int theoryProgress;

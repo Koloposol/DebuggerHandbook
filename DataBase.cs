@@ -10,8 +10,6 @@ namespace DebuggerHandbook
 {
     internal class DataBase
     {
-        //static string connectionString = @"Data Source=DESKTOP-UGDHEEM;Initial Catalog=kursovaya;Integrated Security=True;TrustServerCertificate=True";
-        //static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\database\kursovaya.mdf;Integrated Security=True";
         static string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\database\kursova.mdf;Integrated Security = True; Connect Timeout = 30";
         SqlConnection sqlConnection = new SqlConnection(connectionString);
 
