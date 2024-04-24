@@ -43,21 +43,34 @@ namespace DebuggerHandbook
             buttonViewPas.Visible = true;
         }
 
-        private void CheckingValidityOfFields()
+        private bool CheckingValidityOfFields()
         {
             if (textBoxSurname.Text == "" || textBoxName.Text == "" || textBoxEmail.Text == "" || textBoxPassword.Text == "")
+            {
                 MessageBox.Show("Необходимо заполнить все поля!", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
             else
             {
                 string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
                 if (!Regex.IsMatch(textBoxEmail.Text, pattern, RegexOptions.IgnoreCase))
+                {
                     MessageBox.Show("Email указан в неверном формате!", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
 
                 string fioPattern = @"[А-Яа-я]";
                 if (!Regex.IsMatch(textBoxSurname.Text, fioPattern, RegexOptions.IgnoreCase))
+                {
                     MessageBox.Show("Фамилия указано в неверном формате!", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
                 else if (!Regex.IsMatch(textBoxName.Text, fioPattern, RegexOptions.IgnoreCase))
+                {
                     MessageBox.Show("Имя указано в неверном формате!", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
+                return true;
             }
         }
 
@@ -67,14 +80,19 @@ namespace DebuggerHandbook
         {
             try
             {
-                CheckingValidityOfFields();
-
                 int id = userId;
                 string surname = textBoxSurname.Text;
                 string name = textBoxName.Text;
                 string email = textBoxEmail.Text;
                 string password = textBoxPassword.Text;
 
+                if (!CheckingValidityOfFields())
+                {
+                    MessageBox.Show("Неудалось изменить учетную запись!", "Ошибка изменения!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    this.DialogResult = DialogResult.No;
+                    return;
+                }
+                
                 DataBase db = new DataBase();
 
                 string query = $"UPDATE users_db " +
@@ -100,6 +118,7 @@ namespace DebuggerHandbook
                 MessageBox.Show("Неудалось изменить учетную запись!\nВозможно указанные email или пароль уже зарегистрированы.", "Ошибка изменения!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBoxEmail.Text = "";
                 textBoxPassword.Text = "";
+                this.DialogResult = DialogResult.No;
                 return;
             }
         }

@@ -47,25 +47,36 @@ namespace DebuggerHandbook
             this.Hide();
         }
 
-        private void CheckingValidityOfFields()
+        private bool CheckingValidityOfFields()
         {
             if (textBoxEmail.Text == "" || textBoxPassword.Text == "")
+            {
                 MessageBox.Show("Необходимо заполнить все поля!", "Ошибка авторизации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
             else
             {
                 string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
                 if (!Regex.IsMatch(textBoxEmail.Text, pattern, RegexOptions.IgnoreCase))
+                {
                     MessageBox.Show("Email указан в неверном формате!", "Ошибка авторизации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
+                return true;
             }
         }
 
         private void buttonLogIn_Click(object sender, EventArgs e)
         {
-            CheckingValidityOfFields();
+            string email = "";
+            string password = "";
 
-            string email = textBoxEmail.Text;
-            string password = textBoxPassword.Text;
-
+            if (CheckingValidityOfFields())
+            {
+                email = textBoxEmail.Text;
+                password = textBoxPassword.Text;
+            }
+                
             DataBase db = new DataBase();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
             DataTable dataTable = new DataTable();

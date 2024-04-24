@@ -98,6 +98,8 @@ namespace DebuggerHandbook
             userProfileSettings.ShowDialog();
             if (userProfileSettings.DialogResult == DialogResult.OK)
                 this.Close();
+            else if (userProfileSettings.DialogResult == DialogResult.No)
+                userProfileSettings.ShowDialog();
 
             LoadUserData(userEmail);
             CheckProgress();

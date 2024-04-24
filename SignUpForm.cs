@@ -45,21 +45,34 @@ namespace DebuggerHandbook
             buttonViewPassword.Visible = true;
         }
 
-        private void CheckingValidityOfFields()
+        private bool CheckingValidityOfFields()
         {
             if (textBoxEmail.Text == "" || textBoxPassword.Text == "" || textBoxSurname.Text == "" || textBoxName.Text == "")
+            {
                 MessageBox.Show("Необходимо заполнить все поля!", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
             else
             {
                 string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
                 if (!Regex.IsMatch(textBoxEmail.Text, pattern, RegexOptions.IgnoreCase))
+                {
                     MessageBox.Show("Email указан в неверном формате!", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
 
                 string fioPattern = @"[А-Яа-я]";
                 if (!Regex.IsMatch(textBoxSurname.Text, fioPattern, RegexOptions.IgnoreCase))
+                {
                     MessageBox.Show("Фамилия указано в неверном формате!", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
                 else if (!Regex.IsMatch(textBoxName.Text, fioPattern, RegexOptions.IgnoreCase))
+                {
                     MessageBox.Show("Имя указано в неверном формате!", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
+                return true;
             }
         }
 
@@ -67,12 +80,16 @@ namespace DebuggerHandbook
         {
             try
             {
-                CheckingValidityOfFields();
+                string surname = textBoxSurname.Text; 
+                string name = textBoxName.Text; 
+                string email = textBoxEmail.Text; 
+                string password = textBoxPassword.Text; 
 
-                string surname = textBoxSurname.Text;
-                string name = textBoxName.Text;
-                string email = textBoxEmail.Text;
-                string password = textBoxPassword.Text;
+                if (!CheckingValidityOfFields())
+                {
+                    MessageBox.Show("Неудалось создать учетную запись!", "Ошибка регистрации!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }             
 
                 DataBase db = new DataBase();
 
@@ -86,10 +103,6 @@ namespace DebuggerHandbook
                 if (sqlCommand.ExecuteNonQuery() == 1)
                 {
                     MessageBox.Show("Учетная запись успешно создана!", "Регистрация завершена!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    LogInForm logInForm = new LogInForm();
-                    logInForm.Show();
-
                     this.Close();
                 }
                 else
