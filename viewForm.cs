@@ -17,12 +17,21 @@ namespace DebuggerHandbook
             InitializeComponent();
         }
 
+        private void viewForm_Load(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(backButton, "Выйти на главную форму.");
+            toolTip1.SetToolTip(buttonReaded, "Отметить лекцию прочитанной.");
+        }
+
         private void backButton_Click(object sender, EventArgs e)
         {
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
-
             this.Close();
         }
+
+        private void buttonReaded_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
