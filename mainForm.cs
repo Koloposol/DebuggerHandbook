@@ -158,8 +158,6 @@ namespace DebuggerHandbook
 
             reader.Close();
             db.closeConnection();
-
-            HasCourseCompleted();
         }
 
         private int theoryProgress;
@@ -205,6 +203,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonTheory1.BackColor = Color.Gray;
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -232,6 +231,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonTheory2.BackColor = Color.Gray;
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -259,6 +259,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonTheory3.BackColor = Color.Gray; //<-
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -286,6 +287,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonTheory4.BackColor = Color.Gray; //<-
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -313,6 +315,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonTheory5.BackColor = Color.Gray; //<-
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -340,6 +343,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonTheory6.BackColor = Color.Gray; //<-
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -367,6 +371,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonTheory7.BackColor = Color.Gray; //<-
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -394,6 +399,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonTheory8.BackColor = Color.Gray; //<-
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -444,6 +450,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonPactice1.BackColor = Color.Gray; //
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -465,6 +472,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonPactice2.BackColor = Color.Gray; //
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -486,6 +494,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonPactice3.BackColor = Color.Gray; //
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -507,6 +516,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonPactice4.BackColor = Color.Gray; //
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -528,6 +538,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonPactice5.BackColor = Color.Gray; //
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -549,6 +560,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonPactice6.BackColor = Color.Gray; //
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -570,6 +582,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonPactice7.BackColor = Color.Gray; //
                 }
+                HasCourseCompleted();
             }
             else
             {
@@ -591,6 +604,7 @@ namespace DebuggerHandbook
                     LoadUserData(userEmail);
                     buttonPactice8.BackColor = Color.Gray; //
                 }
+                HasCourseCompleted();
             }
             else
             {
