@@ -94,13 +94,21 @@ namespace DebuggerHandbook
             userProfileSettings.textBoxName.Text = labelName.Text;
             userProfileSettings.textBoxEmail.Text = userEmail;
             userProfileSettings.textBoxPassword.Text = userPassword;
-            
-            userProfileSettings.ShowDialog();
-            if (userProfileSettings.DialogResult == DialogResult.OK)
-                this.Close();
-            else if (userProfileSettings.DialogResult == DialogResult.No)
-                userProfileSettings.ShowDialog();
 
+            while(true)
+            {
+                userProfileSettings.ShowDialog();
+                if (userProfileSettings.DialogResult == DialogResult.OK)
+                {
+                    this.Close();
+                    break;
+                }
+                else if (userProfileSettings.DialogResult == DialogResult.No)
+                {
+                    continue;
+                }
+                break;
+            }
             LoadUserData(userEmail);
             CheckProgress();
         }
